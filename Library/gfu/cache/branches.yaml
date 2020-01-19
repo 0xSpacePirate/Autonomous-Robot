@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2019-11-25T16:36:16.998+00:00
-  initializedAtString: 2019-11-25T16:35:14.481+00:00
+  lastUpdatedAtString: 2020-01-19T17:56:27.712+00:00
+  initializedAtString: 2020-01-19T14:30:14.560+00:00
   localBranches:
   - name: master
-    tracking: 
+    tracking: origin/master
   remoteBranches:
   - name: origin/master
     tracking: '[None]'
   remotes:
   - name: origin
-    url: https://github.com/POBnH4/Self-Balancing-Robot.git
+    url: https://github.com/POBnH4/Self-balancing-Robot.git
     login: 
     user: 
     host: 
@@ -35,9 +35,9 @@ MonoBehaviour:
     values:
     - name: master
       remote:
-        name: 
-        url: 
-      trackingBranch: 
+        name: origin
+        url: https://github.com/POBnH4/Self-balancing-Robot.git
+      trackingBranch: master
   remoteConfigBranches:
     keys:
     - origin
@@ -49,11 +49,11 @@ MonoBehaviour:
       - name: master
         remote:
           name: origin
-          url: https://github.com/POBnH4/Self-Balancing-Robot.git
+          url: https://github.com/POBnH4/Self-balancing-Robot.git
         trackingBranch: 
   configRemotes:
     keys:
     - origin
     values:
     - name: origin
-      url: https://github.com/POBnH4/Self-Balancing-Robot.git
+      url: https://github.com/POBnH4/Self-balancing-Robot.git

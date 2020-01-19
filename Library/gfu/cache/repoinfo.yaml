@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2019-11-25T17:01:48.428+00:00
-  initializedAtString: 2019-11-25T17:01:48.428+00:00
+  lastUpdatedAtString: 2020-01-19T17:56:25.255+00:00
+  initializedAtString: 2020-01-19T14:30:13.537+00:00
   currentGitRemote:
     name: origin
-    url: https://github.com/POBnH4/Self-Balancing-Robot.git
+    url: https://github.com/POBnH4/Self-balancing-Robot.git
     login: 
     user: 
     host: 
@@ -25,14 +25,14 @@ MonoBehaviour:
     token: 
   currentGitBranch:
     name: master
-    tracking: 
+    tracking: origin/master
   currentConfigBranch:
     name: master
     remote:
-      name: 
-      url: 
-    trackingBranch: 
+      name: origin
+      url: https://github.com/POBnH4/Self-balancing-Robot.git
+    trackingBranch: master
   currentConfigRemote:
     name: origin
-    url: https://github.com/POBnH4/Self-Balancing-Robot.git
+    url: https://github.com/POBnH4/Self-balancing-Robot.git
   currentHead: 

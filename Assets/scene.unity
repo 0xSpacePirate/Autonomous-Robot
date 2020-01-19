@@ -354,6 +354,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 4701193308850440, guid: a558cd486d689b648a798c0af1902394, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4681123441317994, guid: a558cd486d689b648a798c0af1902394, type: 3}
       propertyPath: m_LocalScale.x
       value: -0.20012046
@@ -398,9 +402,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c0601fd35d2cf4da6f36723851ad42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetRotation: 2
-  pid: {fileID: 0}
-  rigidBody: {fileID: 0}
+  targetAltitude: 0
+  pid: {fileID: 615343837}
+  rigidBody: {fileID: 615343839}
   mainThrust: 50
 --- !u!114 &615343837
 MonoBehaviour:
@@ -414,10 +418,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6de311dfcdb3b8b4aabe07a199429623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Kp: 0.2
-  Ki: 0.05
-  Kd: 1
-  value: 0
+  Kp: 89
+  Ki: 21
+  Kd: 360
+  value: 1
 --- !u!114 &615343838
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Robot : MonoBehaviour
 {
     Robot robot;
-    public float targetRotation = 2f;
+    public float targetAltitude = -1f;
     public PIDController pid;
     public Rigidbody rigidBody;
 
     [SerializeField] float mainThrust = 100f;
-
+    // rotation z;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,7 @@ public class Robot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // BalanceRobot();
+        BalanceRobot();
         RespondToInput();
     }
 
@@ -39,16 +40,28 @@ public class Robot : MonoBehaviour
 
     private void BalanceRobot()
     {
-        //float currentAltitude = 1f;
-        //float error = targetAltitude - currentAltitude;
-        //if (transform.rotation.eulerAngles.z > 0)
-        //    rigidbody.AddRelativeTorque(-transform.forward * pid.Update(error) * transform.rotation.eulerAngles.z);
+        float currentAltitude = transform.position.z;
+        float error = -currentAltitude;
+        Debug.Log("Error=" + error);
+        Debug.Log(transform.rotation.eulerAngles.z + " - " + 360 + " = " + (-(transform.rotation.eulerAngles.z - 360)));
 
-        //if (transform.rotation.eulerAngles.z < 0)
-        //    rigidbody.AddRelativeTorque(transform.forward * pid.Update(error) * -(transform.rotation.eulerAngles.z - 360));
-  
-        //Mathf.Clamp01(pid.Update(error))
-        //rigidBody.AddForce(Vector3.forward * Time.deltaTime * 100);
+        //falling forward;
+        if (transform.rotation.eulerAngles.z < 0)
+        {
+            GetComponent<Rigidbody>().AddTorque(transform.forward * pid.Update(error) * -(transform.rotation.eulerAngles.z - 360));
+            Debug.Log("Balance Robot in < 0");
+        }
+
+        //falling backwards
+        if (transform.rotation.eulerAngles.z > 0)
+        {
+            GetComponent<Rigidbody>().AddTorque(-transform.forward * pid.Update(error) * transform.rotation.eulerAngles.z);
+
+            //rigidBody.AddTorque(-transform.forward * pid.Update(error) * transform.rotation.eulerAngles.z);
+
+            Debug.Log("Balance Robot in > 0");
+        }
+        //rigidBody.AddForce(Vector3.forward * Time.deltaTime * 10);
     }
 }
 
