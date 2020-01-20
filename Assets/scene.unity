@@ -316,11 +316,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4701193308850440, guid: a558cd486d689b648a798c0af1902394, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.203
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4701193308850440, guid: a558cd486d689b648a798c0af1902394, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.018
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4701193308850440, guid: a558cd486d689b648a798c0af1902394, type: 3}
       propertyPath: m_LocalPosition.z
@@ -402,9 +402,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c0601fd35d2cf4da6f36723851ad42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetAltitude: 0
+  targetAltitude: -1
   pid: {fileID: 615343837}
   rigidBody: {fileID: 615343839}
+  originalPosition: {x: 0, y: 0, z: 0}
+  originalRotation: {x: 0, y: 0, z: 0, w: 0}
   mainThrust: 50
 --- !u!114 &615343837
 MonoBehaviour:
@@ -418,9 +420,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6de311dfcdb3b8b4aabe07a199429623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Kp: 89
-  Ki: 21
-  Kd: 360
+  Kp: 67
+  Ki: 4
+  Kd: 125
   value: 1
 --- !u!114 &615343838
 MonoBehaviour:
