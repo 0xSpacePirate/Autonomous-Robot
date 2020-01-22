@@ -420,9 +420,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6de311dfcdb3b8b4aabe07a199429623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Kp: 67
+  Kp: 30
   Ki: 4
-  Kd: 125
+  Kd: 55
   value: 1
 --- !u!114 &615343838
 MonoBehaviour:

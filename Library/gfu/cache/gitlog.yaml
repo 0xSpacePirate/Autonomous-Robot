@@ -13,9 +13,117 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2020-01-20T17:53:43.790+00:00
-  initializedAtString: 2020-01-20T16:04:35.854+00:00
+  lastUpdatedAtString: 2020-01-21T12:06:42.657+00:00
+  initializedAtString: 2020-01-21T12:06:42.572+00:00
   log:
+  - commitID: 70c845c3c3801f5c4b2614553d42c514e685e64e
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: added a reset Position and Rotation feature
+    description: 
+    timeString: 2020-01-20T18:39:46.000+00:00
+    commitTimeString: 2020-01-20T18:39:46.000+00:00
+    changes:
+    - path: Assets\PIDController.cs
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\PIDController.cs
+      projectPath: Assets\PIDController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Robot.cs
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Robot.cs
+      projectPath: Assets\Robot.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\scene.unity
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\scene.unity
+      projectPath: Assets\scene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\CurrentLayout-default.dwlt
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\CurrentLayout-default.dwlt
+      projectPath: Library\CurrentLayout-default.dwlt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\ScriptAssemblies\Assembly-CSharp.dll
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\ScriptAssemblies\Assembly-CSharp.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\ScriptAssemblies\Assembly-CSharp.pdb
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\StateCache\Hierarchy\a1d69d-mainStage.json
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\StateCache\Hierarchy\a1d69d-mainStage.json
+      projectPath: Library\StateCache\Hierarchy\a1d69d-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\assetDatabase3
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\assetDatabase3
+      projectPath: Library\assetDatabase3
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\branches.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitlocks.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitlog.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitstatusentries.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\repoinfo.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\metadata\6d\6de311dfcdb3b8b4aabe07a199429623
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\metadata\6d\6de311dfcdb3b8b4aabe07a199429623
+      projectPath: Library\metadata\6d\6de311dfcdb3b8b4aabe07a199429623
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\metadata\e5\e5c0601fd35d2cf4da6f36723851ad42
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\metadata\e5\e5c0601fd35d2cf4da6f36723851ad42
+      projectPath: Library\metadata\e5\e5c0601fd35d2cf4da6f36723851ad42
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: e51ad88c89f969f56be4c81d507756735b837956
     mergeA: 
     mergeB: 

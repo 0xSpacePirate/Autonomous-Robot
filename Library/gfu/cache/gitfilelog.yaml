@@ -1,0 +1,716 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -514704792, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 4
+  lastUpdatedAtString: 2020-01-20T21:41:02.225+00:00
+  initializedAtString: 2020-01-20T21:40:45.222+00:00
+  fileLog:
+    path: Assets
+    logEntries:
+    - commitID: 70c845c3c3801f5c4b2614553d42c514e685e64e
+      mergeA: 
+      mergeB: 
+      authorName: POBnH4
+      authorEmail: bonchp4@yahoo.com
+      commitEmail: bonchp4@yahoo.com
+      commitName: POBnH4
+      summary: added a reset Position and Rotation feature
+      description: 
+      timeString: 2020-01-20T18:39:46.000+00:00
+      commitTimeString: 2020-01-20T18:39:46.000+00:00
+      changes:
+      - path: Assets\PIDController.cs
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\PIDController.cs
+        projectPath: Assets\PIDController.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Robot.cs
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Robot.cs
+        projectPath: Assets\Robot.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\scene.unity
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\scene.unity
+        projectPath: Assets\scene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: e51ad88c89f969f56be4c81d507756735b837956
+      mergeA: 
+      mergeB: 
+      authorName: POBnH4
+      authorEmail: bonchp4@yahoo.com
+      commitEmail: bonchp4@yahoo.com
+      commitName: POBnH4
+      summary: fix to falling backwards problem
+      description: 
+      timeString: 2020-01-19T18:53:57.000+00:00
+      commitTimeString: 2020-01-19T18:53:57.000+00:00
+      changes:
+      - path: Assets\PIDController.cs
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\PIDController.cs
+        projectPath: Assets\PIDController.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Robot.cs
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Robot.cs
+        projectPath: Assets\Robot.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\scene.unity
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\scene.unity
+        projectPath: Assets\scene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: bb8530e2f64d1f1522f1e20fd888fd6aca055ccb
+      mergeA: 
+      mergeB: 
+      authorName: POBnH4
+      authorEmail: bonchp4@yahoo.com
+      commitEmail: bonchp4@yahoo.com
+      commitName: POBnH4
+      summary: Initial commit
+      description: 
+      timeString: 2019-11-25T17:13:34.000+00:00
+      commitTimeString: 2019-11-25T17:13:34.000+00:00
+      changes:
+      - path: Assets\.gitignore
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\.gitignore
+        projectPath: Assets\.gitignore
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Colors.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Colors.meta
+        projectPath: Assets\Colors.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Colors\AntennaColor.mat
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Colors\AntennaColor.mat
+        projectPath: Assets\Colors\AntennaColor.mat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Colors\AntennaColor.mat.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Colors\AntennaColor.mat.meta
+        projectPath: Assets\Colors\AntennaColor.mat.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Colors\BodyColor.mat
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Colors\BodyColor.mat
+        projectPath: Assets\Colors\BodyColor.mat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Colors\BodyColor.mat.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Colors\BodyColor.mat.meta
+        projectPath: Assets\Colors\BodyColor.mat.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Colors\BodyColorTwo.mat
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Colors\BodyColorTwo.mat
+        projectPath: Assets\Colors\BodyColorTwo.mat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Colors\BodyColorTwo.mat.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Colors\BodyColorTwo.mat.meta
+        projectPath: Assets\Colors\BodyColorTwo.mat.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Colors\EyeColor.mat
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Colors\EyeColor.mat
+        projectPath: Assets\Colors\EyeColor.mat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Colors\EyeColor.mat.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Colors\EyeColor.mat.meta
+        projectPath: Assets\Colors\EyeColor.mat.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Colors\TerrainColor.mat
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Colors\TerrainColor.mat
+        projectPath: Assets\Colors\TerrainColor.mat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Colors\TerrainColor.mat.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Colors\TerrainColor.mat.meta
+        projectPath: Assets\Colors\TerrainColor.mat.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Colors\WheelColor.mat
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Colors\WheelColor.mat
+        projectPath: Assets\Colors\WheelColor.mat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Colors\WheelColor.mat.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Colors\WheelColor.mat.meta
+        projectPath: Assets\Colors\WheelColor.mat.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\New Terrain.asset
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\New Terrain.asset
+        projectPath: Assets\New Terrain.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\New Terrain.asset.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\New Terrain.asset.meta
+        projectPath: Assets\New Terrain.asset.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\PIDController.cs
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\PIDController.cs
+        projectPath: Assets\PIDController.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\PIDController.cs.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\PIDController.cs.meta
+        projectPath: Assets\PIDController.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins.meta
+        projectPath: Assets\Plugins.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub.meta
+        projectPath: Assets\Plugins\GitHub.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor.meta
+        projectPath: Assets\Plugins\GitHub\Editor.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+        projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+        projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+        projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.pdb
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Api.45.pdb
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.pdb
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.pdb.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Api.45.pdb.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.pdb.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.pdb
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Api.pdb
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.pdb
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.pdb.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Api.pdb.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.pdb.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.pdb
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Logging.pdb
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.pdb
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.pdb.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Logging.pdb.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.pdb.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.pdb
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.pdb
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.pdb
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.pdb.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.pdb.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.pdb.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.pdb
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Unity.pdb
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.pdb
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.pdb.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.Unity.pdb.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.pdb.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.mdb
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.mdb
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.mdb
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.mdb.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.mdb.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.mdb.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.pdb
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.pdb
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.pdb
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.pdb.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.pdb.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.pdb.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+        projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+        projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+        projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+        projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\System.Threading.dll
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\System.Threading.dll
+        projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+        projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+        projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\big-logo@2x.png
+        projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+        projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\credits.txt
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\credits.txt
+        projectPath: Assets\Plugins\GitHub\Editor\credits.txt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\credits.txt.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\credits.txt.meta
+        projectPath: Assets\Plugins\GitHub\Editor\credits.txt.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\eula.txt
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\eula.txt
+        projectPath: Assets\Plugins\GitHub\Editor\eula.txt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\eula.txt.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\eula.txt.meta
+        projectPath: Assets\Plugins\GitHub\Editor\eula.txt.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\libsfw.bundle
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\libsfw.bundle
+        projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+        projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\libsfw.so
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\libsfw.so
+        projectPath: Assets\Plugins\GitHub\Editor\libsfw.so
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\libsfw.so.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\libsfw.so.meta
+        projectPath: Assets\Plugins\GitHub\Editor\libsfw.so.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\sfw.net.dll
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\sfw.net.dll
+        projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x64.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\x64.meta
+        projectPath: Assets\Plugins\GitHub\Editor\x64.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+        projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+        projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x86.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\x86.meta
+        projectPath: Assets\Plugins\GitHub\Editor\x86.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+        projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+        projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\RLController.cs
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\RLController.cs
+        projectPath: Assets\RLController.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\RLController.cs.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\RLController.cs.meta
+        projectPath: Assets\RLController.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Robot.cs
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Robot.cs
+        projectPath: Assets\Robot.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Robot.cs.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Robot.cs.meta
+        projectPath: Assets\Robot.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Robot.prefab
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Robot.prefab
+        projectPath: Assets\Robot.prefab
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Robot.prefab.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Robot.prefab.meta
+        projectPath: Assets\Robot.prefab.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Scenes.meta
+        projectPath: Assets\Scenes.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Scenes\SampleScene.unity.meta
+        projectPath: Assets\Scenes\SampleScene.unity.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\scene.unity
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\scene.unity
+        projectPath: Assets\scene.unity
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\scene.unity.meta
+        fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\scene.unity.meta
+        projectPath: Assets\scene.unity.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0

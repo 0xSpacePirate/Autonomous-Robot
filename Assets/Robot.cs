@@ -78,7 +78,7 @@ public class Robot : MonoBehaviour
 
             Debug.Log("Balance Robot in > 0");
         }
-        rigidBody.AddForce(Vector3.forward * Time.deltaTime * 10);
+        //rigidBody.AddForce(Vector3.forward * Time.deltaTime * 10);
     }
 
     private void resetWhenBalanceLost()
