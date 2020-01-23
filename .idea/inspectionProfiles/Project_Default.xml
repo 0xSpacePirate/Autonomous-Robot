@@ -8,6 +8,7 @@
           <option value="RobotScripts.LeftServo.*" />
           <option value="RobotScripts.Robot.RPi" />
           <option value="smbus" />
+          <option value="RobotScripts.PID.*" />
         </list>
       </option>
     </inspection_tool>
