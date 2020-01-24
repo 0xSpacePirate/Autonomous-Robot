@@ -9,6 +9,10 @@
           <option value="RobotScripts.Robot.RPi" />
           <option value="smbus" />
           <option value="RobotScripts.PID.*" />
+          <option value="LeftServo" />
+          <option value="RightServo" />
+          <option value="GyroReader" />
+          <option value="GyroFilter" />
         </list>
       </option>
     </inspection_tool>

@@ -46,31 +46,40 @@ address = 0x68  # via i2cdetect
 #  Activate to be able to address the module
 bus.write_byte_data(address, power_mgmt_1, 0)
 
-print("Gyroscope")
-print("-------------------")
 
-gyroscope_xout = read_word_2c(0x43)
-gyroscope_yout = read_word_2c(0x45)
-gyroscope_zout = read_word_2c(0x47)
+def print_gyro_scope_data():
+    print("Gyroscope")
+    print("-------------------")
 
-print ("gyroscope_xout: ", ("%5d" % gyroscope_xout), " scaled: ", (gyroscope_xout / 131))
-print ("gyroscope_yout: ", ("%5d" % gyroscope_yout), " scaled: ", (gyroscope_yout / 131))
-print ("gyroscope_zout: ", ("%5d" % gyroscope_zout), " scaled: ", (gyroscope_zout / 131))
+    gyroscope_xout = read_word_2c(0x43)
+    gyroscope_yout = read_word_2c(0x45)
+    gyroscope_zout = read_word_2c(0x47)
 
-print("accelerometer")
-print("---------------------")
+    print("gyroscope_xout: ", ("%5d" % gyroscope_xout), " scaled: ", (gyroscope_xout / 131))
+    print("gyroscope_yout: ", ("%5d" % gyroscope_yout), " scaled: ", (gyroscope_yout / 131))
+    print("gyroscope_zout: ", ("%5d" % gyroscope_zout), " scaled: ", (gyroscope_zout / 131))
 
-accelerometer_xout = read_word_2c(0x3b)
-accelerometer_yout = read_word_2c(0x3d)
-accelerometer_zout = read_word_2c(0x3f)
 
-accelerometer_xout_scaled = accelerometer_xout / 16384.0
-accelerometer_yout_scaled = accelerometer_yout / 16384.0
-accelerometer_zout_scaled = accelerometer_zout / 16384.0
+def print_accelerometer_data():
+    print("accelerometer")
+    print("---------------------")
 
-print("accelerometer xout: ", ("%6d" % accelerometer_xout), " scaled: ", accelerometer_xout_scaled)
-print("accelerometer yout: ", ("%6d" % accelerometer_yout), " scaled: ", accelerometer_yout_scaled)
-print("accelerometer zout: ", ("%6d" % accelerometer_zout), " scaled: ", accelerometer_zout_scaled)
+    accelerometer_xout = read_word_2c(0x3b)
+    accelerometer_yout = read_word_2c(0x3d)
+    accelerometer_zout = read_word_2c(0x3f)
 
-print("X Rotation: ",get_x_rotation(accelerometer_xout_scaled, accelerometer_yout_scaled, accelerometer_zout_scaled))
-print("Y Rotation: ",get_y_rotation(accelerometer_xout_scaled, accelerometer_yout_scaled, accelerometer_zout_scaled))
+    accelerometer_xout_scaled = accelerometer_xout / 16384.0
+    accelerometer_yout_scaled = accelerometer_yout / 16384.0
+    accelerometer_zout_scaled = accelerometer_zout / 16384.0
+
+    print("accelerometer xout: ", ("%6d" % accelerometer_xout), " scaled: ", accelerometer_xout_scaled)
+    print("accelerometer yout: ", ("%6d" % accelerometer_yout), " scaled: ", accelerometer_yout_scaled)
+    print("accelerometer zout: ", ("%6d" % accelerometer_zout), " scaled: ", accelerometer_zout_scaled)
+
+    print("X Rotation: ", get_x_rotation(accelerometer_xout_scaled, accelerometer_yout_scaled, accelerometer_zout_scaled))
+    print("Y Rotation: ", get_y_rotation(accelerometer_xout_scaled, accelerometer_yout_scaled, accelerometer_zout_scaled))
+
+
+def print_all_data():
+    print_gyro_scope_data()
+    print_accelerometer_data()

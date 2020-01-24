@@ -106,6 +106,6 @@ for i in range(0, int(300.0 / time_diff)):
     else:
         MOTOR.backward((pid * -1))
 
-    print
-    "{0:.2f} {1:.2f} {2:.2f} {3:.2f} | {4:.2f} {5:.2f} | {6:.2f}".format(gyroAngleX, gyroAngleY, accAngX, CFangleX,
-                                                                         accAngX1, CFangleX1, pid)
+    print(
+        "{0:.2f} {1:.2f} {2:.2f} {3:.2f} | {4:.2f} {5:.2f} | {6:.2f}".format(gyroAngleX, gyroAngleY, accAngX, CFangleX,
+                                                                             accAngX1, CFangleX1, pid))

@@ -3,6 +3,8 @@ import time
 import LeftServo as leftMotor
 import RightServo as rightMotor
 from threading import Thread
+import GyroReader as gyroScope
+import GyroFilter as gyroFilter
 
 print("Launch Configuration initiated")
 
@@ -36,14 +38,20 @@ def turnRight():
 def turnBack():	
 	back = 12.5 # turn backwards 180 degrees
 	rightMotor.stop()
-	leftMotor.turn(12.5)
+	leftMotor.turn(back)
 
 
-startMotors()
+def balance():
+	gyroScope.print_all_data()
+	print("\n\n------------ PID + Filter Below ---------------\n\n")
+	gyroFilter.print_all()
+	startMotors()
+	turnLeft()
+	turnRight()
+	turnBack()
 
-turnLeft()
-turnRight()
-turnBack()
+
+balance()
 
 stopMotors()
 
