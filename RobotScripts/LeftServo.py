@@ -10,23 +10,21 @@ p = GPIO.PWM(11, 50)  # Sets up pin 11 as a PWM pin | 50hz frequency
 
 def start():
     p.start(0)  # Starts running PWM on the pin and sets it to 0
-
     # Move the servo back and forth
     p.ChangeDutyCycle(3)  # Changes the pulse width to 3 (so moves the servo)
-    sleep(1)  # Wait 1 second
-    p.ChangeDutyCycle(12)  # Changes the pulse width to 12 (so moves the servo)
+    sleep(2)  # Wait 1 second
+    #p.ChangeDutyCycle(12)  # Changes the pulse width to 12 (so moves the servo)
 
 
-def turn(dutyCycleNumber):
-	p.ChangeDutyCycle(dutyCycleNumber)
-	sleep(1)
+def move(duty_cycle_number):
+    p.ChangeDutyCycle(1)
+    sleep(3)
 
 
 def stop():
     p.stop()  # At the end of the program, stop the PWM
-    #GPIO.cleanup()  # Resets the GPIO pins back to defaults
+    # GPIO.cleanup()  # Resets the GPIO pins back to defaults
 
 
-start()
-#stop()
-
+# start()
+# stop()

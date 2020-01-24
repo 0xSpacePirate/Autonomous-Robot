@@ -13,6 +13,9 @@
           <option value="RightServo" />
           <option value="GyroReader" />
           <option value="GyroFilter" />
+          <option value="MPU6050" />
+          <option value="PID" />
+          <option value="PIDBalancer" />
         </list>
       </option>
     </inspection_tool>
