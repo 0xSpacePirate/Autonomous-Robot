@@ -1,7 +1,7 @@
 import smbus
 import math
 import time
-from simple_pid import PID
+import simple_pid
 import GyroFilter as gyroFilter
 
 gyro_scale = 131.0
@@ -45,9 +45,9 @@ def get_x_rotation(x, y, z):
     return math.degrees(radians)
 
 
-pid = PID(1.0, -0.04, 0.0, setpoint=0)
+pid = simple_pid.PID(1.0, -0.04, 0.0, setpoint=0)
 
-time.sleep(time_diff - 0.005)  # SHOULDN'T IT BE AS SMALL AS POSSIBLE? - TEST
+# time.sleep(time_diff - 0.005)  # SHOULDN'T IT BE AS SMALL AS POSSIBLE? - TEST
 
 (gyro_scaled_x, gyro_scaled_y, gyro_scaled_z, accel_scaled_x, accel_scaled_y, accel_scaled_z) = gyroFilter.read_all()
 
@@ -72,7 +72,9 @@ p = pid(CFangleX1)
 
 
 def get_pid_value():
+    print("PID value = " + str(p))
     return p
+
 
 
 #print(

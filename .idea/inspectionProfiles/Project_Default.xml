@@ -16,6 +16,7 @@
           <option value="MPU6050" />
           <option value="PID" />
           <option value="PIDBalancer" />
+          <option value="simple_pid" />
         </list>
       </option>
     </inspection_tool>
