@@ -8,6 +8,7 @@ import GyroFilter as gyroFilter
 import PIDBalancer as pidBalancer
 
 print("Launch Configuration initiated")
+# DutyCycle = 1/18 * (DesiredAngle) + 2 (or + 2.5 -> check)
 
 
 def start_motors():
@@ -39,14 +40,14 @@ def move_right():
 
 def move_forward(pid_value):
 	start_motors()
-	forward = pid_value  # emphasizes that the pid value is being used
+	forward = 5.5 # pid_value  # emphasizes that the pid value is being used
 	leftMotor.move(forward)
 	rightMotor.move(forward)
 
 
 def move_backwards(pid_value):
 	start_motors()
-	backwards = pid_value  # emphasizes that the pid value is being used
+	backwards = 12 # pid_value  # emphasizes that the pid value is being used
 	leftMotor.move(backwards)
 	rightMotor.move(backwards)
 
@@ -69,6 +70,12 @@ def balance():
 			gyroFilter.print_all()
 			pid_value = pidBalancer.get_pid_value()
 			# leftMotor.stop()
+			move_backwards(0)
+			gyroFilter.print_all()
+			# time.sleep(0.1)
+			gyroFilter.print_all()
+			move_forward(0)
+			gyroFilter.print_all()
 			# rightMotor.stop()
 			# time.sleep(0.1)
 			stabilize()
@@ -82,17 +89,21 @@ def balance():
 
 
 def stabilize():
+	#DutyCycle = PulseWidth/Period, therefore
+	#DutyCycle = PulseWidth/(1/frequency) = PulseWidth * frequency
+	#DutyCycle = PulseWidth*frequency = .001*50=.05= 5%
 	start_motors()
 	pid_value = pidBalancer.get_pid_value()
 	if pidBalancer.get_pid_value() > 0:
 		move_forward(pid_value)
 	else:
 		move_backwards(pid_value)
+	stop_motors()
 
 
 balance()
 
-stop_motors()
+#stop_motors()
 
 
 
