@@ -1,4 +1,4 @@
-#!/usr/bin/python
+# !/usr/bin/python
 
 import smbus
 import math
@@ -63,14 +63,14 @@ time_diff = 0.01
 def print_all():
 
     (gyro_scaled_x, gyro_scaled_y, gyro_scaled_z, accel_scaled_x, accel_scaled_y, accel_scaled_z) = read_all()
-    print("{0:.4f} {1:.2f} {2:.2f} {3:.2f} {4:.2f} {5:.2f} {6:.2f}".format(time.time() - now, gyro_scaled_x, gyro_scaled_y, gyro_scaled_z, accel_scaled_x, accel_scaled_y, accel_scaled_z))
+    print("Time: {0:.4f} | GyroX: {1:.2f} | GyroY: {2:.2f} | GyroZ: {3:.2f} | AccelX: {4:.2f} | AccelY: {5:.2f} | AccelZ: {6:.2f}".format(time.time() - now, gyro_scaled_x, gyro_scaled_y, gyro_scaled_z, accel_scaled_x, accel_scaled_y, accel_scaled_z))
     last_x = get_x_rotation(accel_scaled_x, accel_scaled_y, accel_scaled_z)
     last_y = get_y_rotation(accel_scaled_x, accel_scaled_y, accel_scaled_z)
     gyro_offset_x = gyro_scaled_x
     gyro_offset_y = gyro_scaled_y
     gyro_total_x = (last_x) - gyro_offset_x
     gyro_total_y = (last_y) - gyro_offset_y
-    print("{0:.4f} {1:.2f} {2:.2f} {3:.2f} {4:.2f} {5:.2f} {6:.2f}".format(time.time() - now, (last_x), gyro_total_x, (last_x),(last_y), gyro_total_y, (last_y)))
+    # print("{0:.4f} {1:.2f} {2:.2f} {3:.2f} {4:.2f} {5:.2f} {6:.2f}".format(time.time() - now, (last_x), gyro_total_x, (last_x),(last_y), gyro_total_y, (last_y)))
     (gyro_scaled_x, gyro_scaled_y, gyro_scaled_z, accel_scaled_x, accel_scaled_y, accel_scaled_z) = read_all()
     gyro_scaled_x -= gyro_offset_x
     gyro_scaled_y -= gyro_offset_y
@@ -82,7 +82,4 @@ def print_all():
     rotation_y = get_y_rotation(accel_scaled_x, accel_scaled_y, accel_scaled_z)
     last_x = K * (last_x + gyro_x_delta) + (K1 * rotation_x)
     last_y = K * (last_y + gyro_y_delta) + (K1 * rotation_y)
-    print("{0:.4f} {1:.2f} {2:.2f} {3:.2f} {4:.2f} {5:.2f} {6:.2f}".format(time.time() - now, (rotation_x),
-                                                                           (gyro_total_x),
-                                                                           (last_x),(rotation_y), (gyro_total_y),
-                                                                           (last_y)))
+    # print("{0:.4f} {1:.2f} {2:.2f} {3:.2f} {4:.2f} {5:.2f} {6:.2f}".format(time.time() - now, (rotation_x), (gyro_total_x), (last_x),(rotation_y), (gyro_total_y),(last_y)))

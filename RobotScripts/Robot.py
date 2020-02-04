@@ -87,7 +87,7 @@ def balance():
         # time.sleep(0.1)
         # stabilize()
         gyroFilter.print_all()
-	stop_motors()
+        stop_motors()
     except KeyboardInterrupt:
         print("Interrupted. End of stabilizing")
 
