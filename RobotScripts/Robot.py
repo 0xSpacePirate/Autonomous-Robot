@@ -5,8 +5,8 @@ import RightServo as rightMotor
 from threading import Thread
 # import GyroReader as gyroScope
 import GyroFilter as gyroFilter
-import PIDBalancer as pidBalancer
-
+from PIDBalancer import PIDBalancer
+from PIDController import PIDController
 
 class Robot:
     print("Launch Configuration initiated")
@@ -16,7 +16,7 @@ class Robot:
 
     # DutyCycle = 1/18 * (DesiredAngle) + 2 (or + 2.5 -> check)
 
-    def __init(self):
+    def __init__(self):
         self.pid_balancer = PIDBalancer(1.0, 1.0, 1.0)
 
     def start_motors(self):
@@ -73,7 +73,7 @@ class Robot:
         try:
             while True:
                 gyroFilter.print_all()
-                pid_value = pidBalancer.get_pid_value()
+                pid_value = self.pid_balancer.get_pid_value()
                 print("PID value = " + str(pid_value))
                 self.stabilize()
                 gyroFilter.print_all()
@@ -89,13 +89,12 @@ class Robot:
         # DutyCycle = PulseWidth/Period, therefore
         # DutyCycle = PulseWidth/(1/frequency) = PulseWidth * frequency
         # DutyCycle = PulseWidth*frequency = .001*50=.05= 5%
-        pid_value = pidBalancer.get_pid_value()
-        if pidBalancer.get_pid_value() > 0:
+        pid_value = self.pid_balancer.get_pid_value()
+        if pid_value > 0:
             self.move_forward(pid_value)
         else:
             self.move_backwards(pid_value)
         self.stop_motors()
 
-    balance()
 
 # stop_motors()

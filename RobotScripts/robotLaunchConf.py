@@ -1,4 +1,4 @@
-import Robot as robot
+from Robot import Robot
 #import PID as pid
 #import RL as rl
 
@@ -7,8 +7,8 @@ import Robot as robot
 #import LeftServo as leftMotor
 #import RightServo as rightMotor
 
-
-
+robertGordon = Robot()
+robertGordon.balance()
 
 
 
