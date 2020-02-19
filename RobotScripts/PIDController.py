@@ -8,9 +8,9 @@ class PIDController:
         self.Ki = ki
         self.Kd = kd
         self.set_point = set_point
-	self.error_prior = 0
-	self.integral = 0
-	self.pid_value = 0
+        self.error_prior = 0
+        self.integral = 0
+        self.pid_value = 0
 
     def update_pid(self, error):
         return self.update(error, time.time())
@@ -30,7 +30,7 @@ class PIDController:
         self.pid_value = 0
 
     def get_pid(self):
-	return self.pid_value
+        return self.pid_value
 
     def get_set_point(self):
         return self.set_point

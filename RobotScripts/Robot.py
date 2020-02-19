@@ -6,7 +6,7 @@ from threading import Thread
 # import GyroReader as gyroScope
 import GyroFilter as gyroFilter
 from PIDBalancer import PIDBalancer
-from PIDController import PIDController
+
 
 class Robot:
     print("Launch Configuration initiated")
@@ -95,6 +95,5 @@ class Robot:
         else:
             self.move_backwards(pid_value)
         self.stop_motors()
-
 
 # stop_motors()
