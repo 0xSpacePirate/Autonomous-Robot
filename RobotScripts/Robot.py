@@ -6,18 +6,20 @@ from threading import Thread
 # import GyroReader as gyroScope
 import GyroFilter as gyroFilter
 from PIDBalancer import PIDBalancer
+from PIDController import PIDController
 
 
 class Robot:
     print("Launch Configuration initiated")
 
-    (gyro_scaled_x, gyro_scaled_y, gyro_scaled_z,
-     accel_scaled_x, accel_scaled_y, accel_scaled_z) = gyroFilter.read_all()
+
 
     # DutyCycle = 1/18 * (DesiredAngle) + 2 (or + 2.5 -> check)
 
     def __init__(self):
         self.pid_balancer = PIDBalancer(1.0, 1.0, 1.0)
+        (self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z,
+        self.accel_scaled_x, self.accel_scaled_y, self.accel_scaled_z) = gyroFilter.read_all()
 
     def start_motors(self):
         # leftMotor.start()
@@ -42,13 +44,13 @@ class Robot:
         leftMotor.stop()
         rightMotor.move(right)
 
-    def move_forward(self, pid_value):
+    def move_forward(self):
         self.start_motors()
         # forward = 5.5  # pid_value  # emphasizes that the pid value is being used
         # leftMotor.move(forward)
         # rightMotor.move(forward)
 
-    def move_backwards(self, pid_value):
+    def move_backwards(self):
         self.start_motors()
         # backwards = 12  # pid_value  # emphasizes that the pid value is being used
         #   leftMotor.move(backwards)
@@ -76,8 +78,9 @@ class Robot:
                 pid_value = self.pid_balancer.get_pid_value()
                 print("PID value = " + str(pid_value))
                 self.stabilize()
+                # self.move_forward()
                 gyroFilter.print_all()
-                self.stop_motors()
+                # self.stop_motors()
         except KeyboardInterrupt:
             print("Interrupted. End of stabilizing")
 
@@ -90,10 +93,16 @@ class Robot:
         # DutyCycle = PulseWidth/(1/frequency) = PulseWidth * frequency
         # DutyCycle = PulseWidth*frequency = .001*50=.05= 5%
         pid_value = self.pid_balancer.get_pid_value()
-        if pid_value > 0:
-            self.move_forward(pid_value)
+        if self.gyro_scaled_y > 5.50:
+            self.move_forward()
+        elif self.gyro_scaled_y < 5.50:
+            self.move_backwards()
         else:
-            self.move_backwards(pid_value)
-        self.stop_motors()
+            print("At 5.50 NOW")
+        # if pid_value > 0:
+        #     self.move_forward()
+        # else:
+        #     self.move_backwards()
+        # self.stop_motors()
 
 # stop_motors()

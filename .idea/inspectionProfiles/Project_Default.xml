@@ -17,6 +17,7 @@
           <option value="PID" />
           <option value="PIDBalancer" />
           <option value="simple_pid" />
+          <option value="RobotScripts.Robot.PIDController" />
         </list>
       </option>
     </inspection_tool>
