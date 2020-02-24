@@ -4,7 +4,7 @@ import LeftServo as leftMotor
 import RightServo as rightMotor
 from threading import Thread
 # import GyroReader as gyroScope
-import GyroFilter as gyroFilter
+from GyroFilter import GyroFilter
 from PIDBalancer import PIDBalancer
 from PIDController import PIDController
 
@@ -18,8 +18,9 @@ class Robot:
 
     def __init__(self):
         self.pid_balancer = PIDBalancer(1.0, 1.0, 1.0)
+	self.gyroFilter = self.pid_balancer.get_gyroFilter()
         (self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z,
-        self.accel_scaled_x, self.accel_scaled_y, self.accel_scaled_z) = gyroFilter.read_all()
+        self.accel_scaled_x, self.accel_scaled_y, self.accel_scaled_z) = self.gyroFilter.get_gyro_and_accel()
 
     def start_motors(self):
         # leftMotor.start()
@@ -74,12 +75,12 @@ class Robot:
 
         try:
             while True:
-                gyroFilter.print_all()
+                self.gyroFilter.print_all()
                 pid_value = self.pid_balancer.get_pid_value()
                 print("PID value = " + str(pid_value))
                 self.stabilize()
                 # self.move_forward()
-                gyroFilter.print_all()
+                self.gyroFilter.print_all()
                 # self.stop_motors()
         except KeyboardInterrupt:
             print("Interrupted. End of stabilizing")

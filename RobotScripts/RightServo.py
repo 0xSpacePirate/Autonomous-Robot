@@ -1,3 +1,4 @@
+
 import RPi.GPIO as GPIO  # Imports the standard Raspberry Pi GPIO library
 from time import sleep  # Imports sleep (aka wait or pause) into the program
 
@@ -10,6 +11,13 @@ pwm = GPIO.PWM(12, 50)  # Sets up pin 11 as a PWM pin | 50hz frequency
 
 def start():
     pwm.start(5)  # Starts running PWM on the pin and sets it to 1
+    #example = 0.0005 # 500us minimum
+
+    pwm.ChangeDutyCycle(1)
+
+    # Generally a 10 us change in
+    # pulse width results in a 1 degree change in angle
+
     # Move the servo back and forth
     # dutyCycle = 1.0
     # print("Duty cycle: " + str(dutyCycle))

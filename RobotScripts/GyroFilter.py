@@ -80,3 +80,6 @@ class GyroFilter:
         last_y = self.K * (last_y + gyro_y_delta) + (self.K1 * rotation_y)
         # print("{0:.4f} {1:.2f} {2:.2f} {3:.2f} {4:.2f} {5:.2f} {6:.2f}".format(time.time() - now, (rotation_x),
         # (gyro_total_x), (last_x),(rotation_y), (gyro_total_y),(last_y)))
+
+    def get_gyro_and_accel(self):
+        return (self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z, self.accel_scaled_x, self.accel_scaled_y, self.accel_scaled_z)
