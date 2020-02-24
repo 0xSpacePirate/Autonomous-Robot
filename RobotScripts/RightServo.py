@@ -1,4 +1,3 @@
-
 import RPi.GPIO as GPIO  # Imports the standard Raspberry Pi GPIO library
 from time import sleep  # Imports sleep (aka wait or pause) into the program
 
@@ -10,10 +9,11 @@ pwm = GPIO.PWM(12, 50)  # Sets up pin 11 as a PWM pin | 50hz frequency
 
 
 def start():
-    pwm.start(5)  # Starts running PWM on the pin and sets it to 1
-    #example = 0.0005 # 500us minimum
+    test = 7.6
+    pwm.start(test)  # Starts running PWM on the pin and sets it to 1
+    # example = 0.0005 # 500us minimum
 
-    pwm.ChangeDutyCycle(1)
+    pwm.ChangeDutyCycle(test)
 
     # Generally a 10 us change in
     # pulse width results in a 1 degree change in angle
@@ -35,8 +35,7 @@ def start():
 
 
 def move(duty_cycle_number):
-    pwm.ChangeDutyCycle(2)
-    sleep(3)
+    pwm.ChangeDutyCycle(duty_cycle_number)
 
 
 def stop():

@@ -54,6 +54,8 @@ class GyroFilter:
         return math.degrees(radians)
 
     def print_all(self):
+        (self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z, self.accel_scaled_x,
+         self.accel_scaled_y, self.accel_scaled_z) = self.read_all()
         print(
             "Time: {0:.4f} | GyroX: {1:.2f} | GyroY: {2:.2f} | GyroZ: {3:.2f} | AccelX: {4:.2f} | AccelY: {5:.2f} | "
             "AccelZ: {6:.2f}".format(time.time() - self.now, self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z,
@@ -82,4 +84,4 @@ class GyroFilter:
         # (gyro_total_x), (last_x),(rotation_y), (gyro_total_y),(last_y)))
 
     def get_gyro_and_accel(self):
-        return (self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z, self.accel_scaled_x, self.accel_scaled_y, self.accel_scaled_z)
+        return self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z, self.accel_scaled_x, self.accel_scaled_y, self.accel_scaled_z

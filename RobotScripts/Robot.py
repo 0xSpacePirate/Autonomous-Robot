@@ -12,15 +12,13 @@ from PIDController import PIDController
 class Robot:
     print("Launch Configuration initiated")
 
-
-
     # DutyCycle = 1/18 * (DesiredAngle) + 2 (or + 2.5 -> check)
 
     def __init__(self):
         self.pid_balancer = PIDBalancer(1.0, 1.0, 1.0)
-	self.gyroFilter = self.pid_balancer.get_gyroFilter()
+        self.gyroFilter = self.pid_balancer.get_gyroFilter()
         (self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z,
-        self.accel_scaled_x, self.accel_scaled_y, self.accel_scaled_z) = self.gyroFilter.get_gyro_and_accel()
+         self.accel_scaled_x, self.accel_scaled_y, self.accel_scaled_z) = self.gyroFilter.get_gyro_and_accel()
 
     def start_motors(self):
         # leftMotor.start()
@@ -73,21 +71,24 @@ class Robot:
         # gyroFilter.print_all()
         # start_motors()
 
-        try:
-            while True:
-                self.gyroFilter.print_all()
-                pid_value = self.pid_balancer.get_pid_value()
-                print("PID value = " + str(pid_value))
-                self.stabilize()
-                # self.move_forward()
-                self.gyroFilter.print_all()
-                # self.stop_motors()
-        except KeyboardInterrupt:
-            print("Interrupted. End of stabilizing")
+        # try:
+        #     while True:
+        #         self.gyroFilter.print_all()
+        #         pid_value = self.pid_balancer.get_pid_value()
+        #         print("PID value = " + str(pid_value))
+        #         self.stabilize()
+        #         # self.move_forward()
+        #         self.gyroFilter.print_all()
+        #         # self.stop_motors()
+        # except KeyboardInterrupt:
+        #     print("Interrupted. End of stabilizing")
 
-    # move_left()
-    # move_right()
-    # move_back()
+        self.gyroFilter.print_all()
+        pid_value = self.pid_balancer.get_pid_value()
+        print("PID value = " + str(pid_value))
+        self.move_forward()
+        #self.stabilize()
+        self.gyroFilter.print_all()
 
     def stabilize(self):
         # DutyCycle = PulseWidth/Period, therefore
@@ -95,9 +96,9 @@ class Robot:
         # DutyCycle = PulseWidth*frequency = .001*50=.05= 5%
         pid_value = self.pid_balancer.get_pid_value()
         if self.gyro_scaled_y > 5.50:
-            self.move_forward()
+            rightMotor.move(12.5)
         elif self.gyro_scaled_y < 5.50:
-            self.move_backwards()
+            rightMotor.move(2.5)
         else:
             print("At 5.50 NOW")
         # if pid_value > 0:
