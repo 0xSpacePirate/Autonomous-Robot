@@ -43,12 +43,10 @@ class PIDBalancer:
         gyroAngleY += gyro_scaled_y * time_diff
         gyroAngleZ += gyro_scaled_z * time_diff
 
-        # http://ozzmaker.com/2013/04/18/success-with-a-balancing-robot-using-a-raspberry-pi/
         accAngX = (math.atan2(accel_scaled_x, accel_scaled_y) + M_PI) * RAD_TO_DEG
         # math.atan2 numeric value between -PI and PI representing the angle theta of an (x, y) point.
         CFangleX = K * (CFangleX + gyro_scaled_x * time_diff) + (1 - K) * accAngX
 
-        # http://blog.bitify.co.uk/2013/11/reading-data-from-mpu-6050-on-raspberry.html
         accAngX1 = self.get_x_rotation(accel_scaled_x, accel_scaled_y, gyro_scaled_z)
         # accAngX1 = get_x_rotation(accel_scaled_x, accel_scaled_y, gyro_scaled_x) or this one - test?
 

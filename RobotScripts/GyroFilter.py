@@ -68,18 +68,14 @@ class GyroFilter:
         gyro_total_x = (last_x) - gyro_offset_x
         gyro_total_y = (last_y) - gyro_offset_y
         # print("{0:.4f} {1:.2f} {2:.2f} {3:.2f} {4:.2f} {5:.2f} {6:.2f}".format(time.time() - now, (last_x),
-        # gyro_total_x, (last_x),(last_y), gyro_total_y, (last_y)))
-        (gyro_scaled_x, gyro_scaled_y, gyro_scaled_z, accel_scaled_x, accel_scaled_y, accel_scaled_z) = self.read_all()
-        gyro_scaled_x -= gyro_offset_x
-        gyro_scaled_y -= gyro_offset_y
-        gyro_x_delta = (gyro_scaled_x * self.time_diff)
-        gyro_y_delta = (gyro_scaled_y * self.time_diff)
-        gyro_total_x += gyro_x_delta
-        gyro_total_y += gyro_y_delta
-        rotation_x = self.get_x_rotation(accel_scaled_x, accel_scaled_y, accel_scaled_z)
-        rotation_y = self.get_y_rotation(accel_scaled_x, accel_scaled_y, accel_scaled_z)
-        last_x = self.K * (last_x + gyro_x_delta) + (self.K1 * rotation_x)
-        last_y = self.K * (last_y + gyro_y_delta) + (self.K1 * rotation_y)
+        # gyro_total_x, (last_x),(last_y), gyro_total_y, (last_y))) (gyro_scaled_x, gyro_scaled_y, gyro_scaled_z,
+        # accel_scaled_x, accel_scaled_y, accel_scaled_z) = self.read_all() gyro_scaled_x -= gyro_offset_x
+        # gyro_scaled_y -= gyro_offset_y gyro_x_delta = (gyro_scaled_x * self.time_diff) gyro_y_delta = (
+        # gyro_scaled_y * self.time_diff) gyro_total_x += gyro_x_delta gyro_total_y += gyro_y_delta rotation_x =
+        # self.get_x_rotation(accel_scaled_x, accel_scaled_y, accel_scaled_z) rotation_y = self.get_y_rotation(
+        # accel_scaled_x, accel_scaled_y, accel_scaled_z)
+        # last_x = self.K * (last_x + gyro_x_delta) + (self.K1 * rotation_x)
+        # last_y = self.K * (last_y + gyro_y_delta) + (self.K1 * rotation_y)
         # print("{0:.4f} {1:.2f} {2:.2f} {3:.2f} {4:.2f} {5:.2f} {6:.2f}".format(time.time() - now, (rotation_x),
         # (gyro_total_x), (last_x),(rotation_y), (gyro_total_y),(last_y)))
 
