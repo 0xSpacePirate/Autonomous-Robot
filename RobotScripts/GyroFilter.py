@@ -16,6 +16,27 @@ class GyroFilter:
         self.address = 0x68  # This is the address value read via the i2cdetect command
         self.bus = smbus.SMBus(1)  # or bus = smbus.SMBus(1) for Revision 2 boards
 
+        self.gyro_vertical_center_x = 5.7
+        self.gyro_vertical_center_y = 7.052
+
+        # self.gyro_left_center_x = 6.09
+        # self.gyro_left_center_y = 5.946
+
+        # self.gyro_right_center_x = 5.378
+        # self.gyro_right_center_y = 5.946
+
+        self.accel_vertical_center_x = -0.173
+        self.accel_vertical_center_y = 0.05
+        self.accel_vertical_center_z = 1.07
+
+        # self.accel_left_center_x = -0.64
+        # self.accel_left_center_y = 0.122
+        # self.accel_left_center_z = 0.829
+
+        # self.accel_right_center_x = 0.66
+        # self.accel_right_center_y = 0.04
+        # self.accel_right_center_z = 0.848
+
         # Now wake the 6050 up as it starts in sleep mode
         self.bus.write_byte_data(self.address, self.power_mgmt_1, 0)
         self.now = time.time()
@@ -67,6 +88,7 @@ class GyroFilter:
         gyro_offset_y = self.gyro_scaled_y
         gyro_total_x = (last_x) - gyro_offset_x
         gyro_total_y = (last_y) - gyro_offset_y
+
         # print("{0:.4f} {1:.2f} {2:.2f} {3:.2f} {4:.2f} {5:.2f} {6:.2f}".format(time.time() - now, (last_x),
         # gyro_total_x, (last_x),(last_y), gyro_total_y, (last_y))) (gyro_scaled_x, gyro_scaled_y, gyro_scaled_z,
         # accel_scaled_x, accel_scaled_y, accel_scaled_z) = self.read_all() gyro_scaled_x -= gyro_offset_x
@@ -74,10 +96,35 @@ class GyroFilter:
         # gyro_scaled_y * self.time_diff) gyro_total_x += gyro_x_delta gyro_total_y += gyro_y_delta rotation_x =
         # self.get_x_rotation(accel_scaled_x, accel_scaled_y, accel_scaled_z) rotation_y = self.get_y_rotation(
         # accel_scaled_x, accel_scaled_y, accel_scaled_z)
+
         # last_x = self.K * (last_x + gyro_x_delta) + (self.K1 * rotation_x)
         # last_y = self.K * (last_y + gyro_y_delta) + (self.K1 * rotation_y)
         # print("{0:.4f} {1:.2f} {2:.2f} {3:.2f} {4:.2f} {5:.2f} {6:.2f}".format(time.time() - now, (rotation_x),
         # (gyro_total_x), (last_x),(rotation_y), (gyro_total_y),(last_y)))
+
+    def calc_xy_values(self):
+        RAD_TO_DEG = 57.29578
+        # Get the deviations from our baseline
+        x_diff = self.accel_scaled_x - self.accel_vertical_center_x
+        y_diff = self.accel_scaled_y - self.accel_vertical_center_y
+        z_diff = self.accel_scaled_z - self.accel_vertical_center_z
+
+        # Work out the squares
+        x = math.pow(x_diff, 2)
+        y = math.pow(y_diff, 2)
+        z = math.pow(z_diff, 2)
+
+        # X Axis
+        result = math.sqrt(x + z)
+        result = x / result
+        accel_angle_x = math.atan(result) * RAD_TO_DEG  # math.atan() output is in RAD
+
+        # Y Axis
+        result = math.sqrt(x + z)
+        result = y / result
+        accel_angle_y = math.atan(result) * RAD_TO_DEG
+
+        return accel_angle_x, accel_angle_y
 
     def get_gyro_and_accel(self):
         return self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z, self.accel_scaled_x, self.accel_scaled_y, self.accel_scaled_z

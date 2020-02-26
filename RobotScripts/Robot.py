@@ -87,8 +87,10 @@ class Robot:
         pid_value = self.pid_balancer.get_pid_value()
         print("PID value = " + str(pid_value))
         self.move_forward()
-        #self.stabilize()
+        # self.stabilize()
         self.gyroFilter.print_all()
+        (x, y) = self.gyroFilter.calc_xy_values()
+        print("X and Y ->  " + str(x) + " : " + str(y))
 
     def stabilize(self):
         # DutyCycle = PulseWidth/Period, therefore
