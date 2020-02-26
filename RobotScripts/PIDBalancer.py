@@ -6,6 +6,17 @@ from GyroFilter import GyroFilter
 from PIDController import PIDController
 
 
+# For more information refer to tests/balance_numbers_tests.txt
+# Gyroscope Average Values;
+# Vertical: x = 5.7, y = 7.052; Steady
+# Left: x = 6.09, y = 5.946
+# Right: x = 5.378, y = 5.946
+# ====================
+# Accelerometer Average Values
+# Vertical: x = -0.173, y = 0.05, z = 1.07; Steady
+# Left: x = -0.64, y = 0.122, z = 0.829
+# Right: x = 0.66, y = 0.04, z = 0.848
+
 class PIDBalancer:
 
     def __init__(self, kp, ki, kd):
