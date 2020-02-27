@@ -24,6 +24,9 @@ class PIDBalancer:
         self.ki = ki
         self.kd = kd
 
+        self.gyro_vertical_center_x = 5.7
+        self.gyro_vertical_center_y = 7.052
+
         gyro_scale = 131.0
         accel_scale = 16384.0
         RAD_TO_DEG = 57.29578
@@ -42,12 +45,14 @@ class PIDBalancer:
         K = 0.98
         FIX = -12.89
 
-        pid_set_point_y = 6.00  # default, means that the robot's "y" is stable
-        self.pid = PIDController(kp, ki, kd, pid_set_point_y)
-        # pid = PIDController(1.0, 1.0, 1.0, pid_set_point_y)
         self.gyroFilter = GyroFilter()
         (self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z, self.accel_scaled_x, self.accel_scaled_y,
          self.accel_scaled_z) = self.gyroFilter.get_gyro_and_accel()
+        (self.accel_vertical_center_x, self.accel_vertical_center_y,
+         self.accel_vertical_center_z) = self.gyroFilter.get_accel_center_xyz()
+        (self.current_accel_x, self.current_accel_y, self.current_accel_z) = self.gyroFilter.get_current_xyz()
+        pid_set_point = 0.00
+        self.pid = PIDController(kp, ki, kd, pid_set_point)
 
         # The angle of the Gyroscope
         gyroAngleX += self.gyro_scaled_x * time_diff
@@ -63,10 +68,6 @@ class PIDBalancer:
 
         CFangleX1 = (K * (CFangleX1 + self.gyro_scaled_x * time_diff) + (1 - K) * accAngX1)
 
-        # Followed the Second example because it gives reasonable pid reading
-        pid_error = self.gyro_scaled_y - pid_set_point_y
-        self.pid.update_pid(pid_error)
-
     def dist(self, a, b):
         return math.sqrt((a * a) + (b * b))
 
@@ -78,11 +79,15 @@ class PIDBalancer:
         radians = math.atan2(y, self.dist(x, z))
         return math.degrees(radians)
 
+    def update_pid_error(self):
+        # Followed the Second example because it gives reasonable pid reading
+        pid_error = self.accel_vertical_center_x - self.current_accel_x  # TODO USE accel_y && accel_z as well?
+        self.pid.update_pid(pid_error)
+
     def get_pid_value(self):
-        print("PID value = " + str(self.pid))
         return self.pid.get_pid
 
-    def get_gyroFilter(self):
+    def get_gyro_filter(self):
         return self.gyroFilter
 
     # print(

@@ -89,6 +89,7 @@ class GyroFilter:
         gyro_total_x = (last_x) - gyro_offset_x
         gyro_total_y = (last_y) - gyro_offset_y
 
+        # TODO remove commented code below?
         # print("{0:.4f} {1:.2f} {2:.2f} {3:.2f} {4:.2f} {5:.2f} {6:.2f}".format(time.time() - now, (last_x),
         # gyro_total_x, (last_x),(last_y), gyro_total_y, (last_y))) (gyro_scaled_x, gyro_scaled_y, gyro_scaled_z,
         # accel_scaled_x, accel_scaled_y, accel_scaled_z) = self.read_all() gyro_scaled_x -= gyro_offset_x
@@ -125,6 +126,12 @@ class GyroFilter:
         accel_angle_y = math.atan(result) * RAD_TO_DEG
 
         return accel_angle_x, accel_angle_y
+
+    def get_accel_center_xyz(self):
+        return self.accel_vertical_center_x, self.accel_vertical_center_y,  self.accel_vertical_center_z
+
+    def get_current_xyz(self):
+        return self.accel_scaled_x, self.accel_scaled_y, self.accel_scaled_z
 
     def get_gyro_and_accel(self):
         return self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z, self.accel_scaled_x, self.accel_scaled_y, self.accel_scaled_z

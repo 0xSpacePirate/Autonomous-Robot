@@ -16,7 +16,7 @@ class Robot:
 
     def __init__(self):
         self.pid_balancer = PIDBalancer(1.0, 1.0, 1.0)
-        self.gyroFilter = self.pid_balancer.get_gyroFilter()
+        self.gyroFilter = self.pid_balancer.get_gyro_filter()
         (self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z,
          self.accel_scaled_x, self.accel_scaled_y, self.accel_scaled_z) = self.gyroFilter.get_gyro_and_accel()
 
@@ -85,7 +85,10 @@ class Robot:
 
         self.gyroFilter.print_all()
         pid_value = self.pid_balancer.get_pid_value()
-        print("PID value = " + str(pid_value))
+        print("PID value = " + str(pid_value()))
+        self.pid_balancer.update_pid_error()
+        pid_value = self.pid_balancer.get_pid_value()
+        print("PID value = " + str(pid_value()))
         self.move_forward()
         # self.stabilize()
         self.gyroFilter.print_all()
