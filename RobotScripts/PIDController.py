@@ -37,7 +37,7 @@ class PIDController:
         self.pid_value = 0
 
     def get_pid(self):
-        return self.pid_value
+        return float(self.pid_value)
 
     def get_set_point(self):
         return self.set_point

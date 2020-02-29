@@ -1,5 +1,4 @@
 import RPi.GPIO as GPIO  # Imports the standard Raspberry Pi GPIO library
-from time import sleep  # Imports sleep (aka wait or pause) into the program
 
 GPIO.setmode(GPIO.BOARD)  # Sets the pin numbering system to use the physical layout
 
@@ -35,12 +34,38 @@ def start():
 
 
 def move(duty_cycle_number):
-    pwm.ChangeDutyCycle(duty_cycle_number)
+    change = 7.1 - duty_cycle_number
+    if 7.08 <= change <= 7.13:
+        pwm.start(0)  # change too small - no need to move
+    else:
+        pwm.start(7.1)  # Starts running PWM on the pin and sets it to 1
+        pwm.ChangeDutyCycle(change)  # + duty_cycle_number
+    print("Stabilizing using PID: " + str(duty_cycle_number))
+    print("DutyCycle using PID: " + str(change))
 
 
 def stop():
     pwm.stop()  # At the end of the program, stop the PWM
-    # GPIO.cleanup()  # Resets the GPIO pins back to
+    GPIO.cleanup()  # Resets the GPIO pins back to
 
-# start()
-# stop()
+# class RightServo:
+#
+#     def __init__(self):
+#         GPIO.setmode(GPIO.BOARD)  # Sets the pin numbering system to use the physical layout
+#         GPIO.setup(12, GPIO.OUT)  # Sets up pin 12 (for PWM) to an output (instead of an input)
+#         self.pwm = GPIO.PWM(12, 50)  # Sets up pin 12 as a PWM pin
+#         self.default_steady_signal = 7.1
+#
+#     def start(self):
+#         self.pwm.start(0)  # Starts running PWM on the pin and sets it
+#         # Move the servo back and forth
+#         # pwm.ChangeDutyCycle(test)
+#
+#     def move(self, duty_cycle_number):
+#         # Steady signal + the pid value(converted to duty cycles)
+#         self.pwm.ChangeDutyCycle(self.default_steady_signal + duty_cycle_number)
+#         print("Right motor moved with: " + str(self.default_steady_signal + duty_cycle_number))
+#
+#     def stop(self):
+#         self.pwm.stop()  # At the end of the program, stop the PWM
+#         # GPIO.cleanup()  # Resets the GPIO pins back to
