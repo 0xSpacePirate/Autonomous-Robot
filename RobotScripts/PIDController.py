@@ -29,7 +29,11 @@ class PIDController:
               "\nIntegral = " + str(self.integral) +
               "\nError Prior = " + str(self.error_prior) +
               "\nValue = " + str(self.pid_value))
+        self.update_time_frame()
         return self.pid_value
+
+    def update_time_frame(self):
+        self.now = time.time()
 
     def reset(self):
         self.error_prior = 0

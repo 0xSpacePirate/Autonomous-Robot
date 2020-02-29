@@ -91,7 +91,7 @@ class Robot:
                 self.stabilize(pid_value())
                 # self.move_forward()
                 self.gyroFilter.print_all()
-                time.sleep(3)
+                time.sleep(0.1)
                 # self.stop_motors()
         except KeyboardInterrupt:
             print("Interrupted. End of stabilizing")
