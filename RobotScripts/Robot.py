@@ -84,6 +84,7 @@ class Robot:
         try:
             while True:
                 self.gyroFilter.print_all()
+                self.pid_balancer.update_pid_error()
                 pid_value = self.pid_balancer.get_pid_value()
                 print("PID value = " + str(pid_value()))
                 # threading.Timer(0.5, self.stabilize(pid_value)).start() # TODO not thread safe
