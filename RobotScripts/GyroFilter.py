@@ -25,10 +25,9 @@ class GyroFilter:
         # self.gyro_right_center_x = 5.378
         # self.gyro_right_center_y = 5.946
 
-        self.accel_vertical_center_x = -0.173
+        self.accel_vertical_center_x = -0.001  # -0.173 default
         self.accel_vertical_center_y = 0.05
         self.accel_vertical_center_z = 1.07
-
         # self.accel_left_center_x = -0.64
         # self.accel_left_center_y = 0.122
         # self.accel_left_center_z = 0.829
@@ -128,7 +127,7 @@ class GyroFilter:
         return accel_angle_x, accel_angle_y
 
     def get_accel_center_xyz(self):
-        return self.accel_vertical_center_x, self.accel_vertical_center_y,  self.accel_vertical_center_z
+        return self.accel_vertical_center_x, self.accel_vertical_center_y, self.accel_vertical_center_z
 
     def get_current_xyz(self):
         return self.accel_scaled_x, self.accel_scaled_y, self.accel_scaled_z

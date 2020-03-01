@@ -82,6 +82,7 @@ class PIDBalancer:
         # Followed the Second example because it gives reasonable pid reading
         (self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z, self.accel_scaled_x, self.accel_scaled_y,
          self.accel_scaled_z) = self.gyroFilter.read_all()
+        #
         pid_error = self.accel_vertical_center_x - self.accel_scaled_x  # TODO USE accel_y && accel_z as well?
         print("center: " + str(self.accel_vertical_center_x) + " current: " + str(self.accel_scaled_x) + " = " + str(pid_error))
         self.pid.update_pid(pid_error)
