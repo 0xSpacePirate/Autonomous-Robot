@@ -47,10 +47,9 @@ class PIDBalancer:
 
         self.gyroFilter = GyroFilter()
         (self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z, self.accel_scaled_x, self.accel_scaled_y,
-         self.accel_scaled_z) = self.gyroFilter.get_gyro_and_accel()
+         self.accel_scaled_z) = self.gyroFilter.read_all()
         (self.accel_vertical_center_x, self.accel_vertical_center_y,
          self.accel_vertical_center_z) = self.gyroFilter.get_accel_center_xyz()
-        (self.current_accel_x, self.current_accel_y, self.current_accel_z) = self.gyroFilter.get_current_xyz()
         pid_set_point = 0.00
         self.pid = PIDController(kp, ki, kd, pid_set_point)
 
@@ -81,10 +80,14 @@ class PIDBalancer:
 
     def update_pid_error(self):
         # Followed the Second example because it gives reasonable pid reading
-        pid_error = self.accel_vertical_center_x - self.current_accel_x  # TODO USE accel_y && accel_z as well?
+        (self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z, self.accel_scaled_x, self.accel_scaled_y,
+         self.accel_scaled_z) = self.gyroFilter.read_all()
+        pid_error = self.accel_vertical_center_x - self.accel_scaled_x  # TODO USE accel_y && accel_z as well?
+        print("center: " + str(self.accel_vertical_center_x) + " current: " + str(self.accel_scaled_x) + " = " + str(pid_error))
         self.pid.update_pid(pid_error)
 
     def get_pid_value(self):
+        print("Current XYZ: " + str(self.accel_scaled_x) + " | " + str(self.accel_scaled_y) + " | " + str(self.accel_scaled_z))
         return self.pid.get_pid
 
     def get_gyro_filter(self):

@@ -16,13 +16,12 @@ class PIDController:
 
     def update_pid(self, error):
         # return self.update(error, time.time())
-        MICROSECOND_TO_SECOND = 1000000.0  # Need a decimal number for higher accuracy
         # return self.update(error, datetime.now().microsecond / MICROSECOND_TO_SECOND)
-        return self.update(error, round(time.time() - self.now, 4))
+        return self.update(error, round(time.time() - self.now, 6))
 
     def update(self, error, dt):
-        derivative = (error - self.error_prior) / dt
         self.integral += error * dt
+        derivative = (error - self.error_prior) / dt
         self.error_prior = error
         self.pid_value = self.Kp * error + self.Ki * self.integral + self.Kd * derivative
         print("Time = " + str(dt) +

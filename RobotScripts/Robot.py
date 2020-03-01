@@ -9,7 +9,7 @@ from GyroFilter import GyroFilter
 from PIDBalancer import PIDBalancer
 from PIDController import PIDController
 from threading import Timer
-
+from simple_pid import PID
 
 class Robot:
     print("Launch Configuration initiated")
@@ -83,6 +83,7 @@ class Robot:
 
         try:
             while True:
+                print("\n= = = = = = = = = = = = = = = = = =\n")
                 self.gyroFilter.print_all()
                 self.pid_balancer.update_pid_error()
                 pid_value = self.pid_balancer.get_pid_value()
@@ -91,7 +92,7 @@ class Robot:
                 self.stabilize(pid_value())
                 # self.move_forward()
                 self.gyroFilter.print_all()
-                time.sleep(0.1)
+                time.sleep(2)
                 # self.stop_motors()
         except KeyboardInterrupt:
             print("Interrupted. End of stabilizing")

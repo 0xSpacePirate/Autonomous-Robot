@@ -76,8 +76,10 @@ def print_accelerometer_data():
     print("accelerometer yout: ", ("%6d" % accelerometer_yout), " scaled: ", accelerometer_yout_scaled)
     print("accelerometer zout: ", ("%6d" % accelerometer_zout), " scaled: ", accelerometer_zout_scaled)
 
-    print("X Rotation: ", get_x_rotation(accelerometer_xout_scaled, accelerometer_yout_scaled, accelerometer_zout_scaled))
-    print("Y Rotation: ", get_y_rotation(accelerometer_xout_scaled, accelerometer_yout_scaled, accelerometer_zout_scaled))
+    print("X Rotation: ",
+          get_x_rotation(accelerometer_xout_scaled, accelerometer_yout_scaled, accelerometer_zout_scaled))
+    print("Y Rotation: ",
+          get_y_rotation(accelerometer_xout_scaled, accelerometer_yout_scaled, accelerometer_zout_scaled))
 
 
 def print_all_data():
