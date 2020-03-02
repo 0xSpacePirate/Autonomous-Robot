@@ -34,12 +34,16 @@ def start():
 
 
 def move(duty_cycle_number):
-    change = 7.1 + duty_cycle_number
+    change = 7.1 - duty_cycle_number
     if 7.08 <= change <= 7.13:
         pwm.start(0)  # change too small - no need to move
     else:
-        pwm.start(7.1)  # Starts running PWM on the pin and sets it to 1
-        pwm.ChangeDutyCycle(change)  # + duty_cycle_number
+        pwm.start(change)  # Starts running PWM on the pin and sets it to 1
+    # elif change > 12.5:
+    #    pwm.start(12.5)
+    # elif change < 0:
+    #    pwm.start(0)
+
     print("Stabilizing using PID: " + str(duty_cycle_number))
     print("DutyCycle using PID: " + str(change))
 
