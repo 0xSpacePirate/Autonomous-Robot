@@ -34,8 +34,8 @@ def start():
 
 
 def move(duty_cycle_number):
-    change = 7.1 - duty_cycle_number
-    if 7.08 <= change <= 7.13:
+    change = 7.1 + duty_cycle_number
+    if 7.08 < change < 7.13:
         pwm.start(0)  # change too small - no need to move
     else:
         pwm.start(change)  # Starts running PWM on the pin and sets it to 1

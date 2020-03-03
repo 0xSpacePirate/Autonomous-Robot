@@ -25,7 +25,7 @@ class GyroFilter:
         # self.gyro_right_center_x = 5.378
         # self.gyro_right_center_y = 5.946
 
-        self.accel_vertical_center_x = -0.001  # -0.173 default
+        self.accel_vertical_center_x = -0.173  # -0.173 default
         self.accel_vertical_center_y = 0.05
         self.accel_vertical_center_z = 1.07
         # self.accel_left_center_x = -0.64

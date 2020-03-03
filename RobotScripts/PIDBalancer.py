@@ -79,12 +79,9 @@ class PIDBalancer:
         return math.degrees(radians)
 
     def update_pid_error(self):
-        # Followed the Second example because it gives reasonable pid reading
-        (self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z, self.accel_scaled_x, self.accel_scaled_y,
-         self.accel_scaled_z) = self.gyroFilter.read_all()
-        #
-        pid_error = self.accel_vertical_center_x - self.accel_scaled_x  # TODO USE accel_y && accel_z as well?
-        print("center: " + str(self.accel_vertical_center_x) + " current: " + str(self.accel_scaled_x) + " = " + str(pid_error))
+        average_accel_scaled_x = self.output_filter()
+        pid_error = self.accel_vertical_center_x + average_accel_scaled_x  # TODO USE accel_y && accel_z as well?
+        print("center: " + str(self.accel_vertical_center_x) + " current(AVG): " + str(average_accel_scaled_x) + " = " + str(pid_error))
         self.pid.update_pid(pid_error)
 
     def get_pid_value(self):
@@ -93,6 +90,16 @@ class PIDBalancer:
 
     def get_gyro_filter(self):
         return self.gyroFilter
+
+    def output_filter(self):
+        sum = 0
+        READ_TESTS = 30
+        for i in range(READ_TESTS):
+            (self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z, self.accel_scaled_x, self.accel_scaled_y,
+             self.accel_scaled_z) = self.gyroFilter.read_all()
+            sum += self.accel_scaled_x
+        average_accel_scaled_x = sum / READ_TESTS
+        return average_accel_scaled_x
 
     # print(
     #    "{0:.2f} {1:.2f} {2:.2f} {3:.2f} | {4:.2f} {5:.2f} | {}".format(gyroAngleX, gyroAngleY, accAngX, CFangleX,
