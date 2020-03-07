@@ -424,7 +424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4701193308850440, guid: a558cd486d689b648a798c0af1902394, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4701193308850440, guid: a558cd486d689b648a798c0af1902394, type: 3}
       propertyPath: m_LocalRotation.z
@@ -432,7 +432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4701193308850440, guid: a558cd486d689b648a798c0af1902394, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4701193308850440, guid: a558cd486d689b648a798c0af1902394, type: 3}
       propertyPath: m_RootOrder
@@ -444,7 +444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4701193308850440, guid: a558cd486d689b648a798c0af1902394, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 4701193308850440, guid: a558cd486d689b648a798c0af1902394, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -513,9 +513,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6de311dfcdb3b8b4aabe07a199429623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Kp: 20
+  Kp: 60
   Ki: 1
-  Kd: 5
+  Kd: 50
   value: 1
 --- !u!114 &615343838
 MonoBehaviour:

@@ -44,13 +44,13 @@ public class Robot : MonoBehaviour
         Debug.Log("Error=" + error);
 
         //falling forward;
-        if (transform.rotation.eulerAngles.z < 0 && transform.rotation.eulerAngles.z >= -40)
+        if (transform.rotation.eulerAngles.z < 0 && transform.rotation.eulerAngles.z >= -50)
         {
             GetComponent<Rigidbody>().AddTorque(transform.forward * pid.Update(error) * transform.rotation.eulerAngles.z);
         }
 
         //falling backwards
-        if (transform.rotation.eulerAngles.z > 0 && transform.rotation.eulerAngles.z <= 40)
+        if (transform.rotation.eulerAngles.z > 0 && transform.rotation.eulerAngles.z <= 50)
         {
             GetComponent<Rigidbody>().AddTorque(-transform.forward * pid.Update(error) * transform.rotation.eulerAngles.z);
         }

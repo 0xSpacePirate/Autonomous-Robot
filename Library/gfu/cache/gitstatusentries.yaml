@@ -13,12 +13,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-03-07T17:18:16.962+00:00
-  initializedAtString: 2020-03-07T14:32:05.922+00:00
+  lastUpdatedAtString: 2020-03-07T19:04:47.877+00:00
+  initializedAtString: 2020-03-07T18:24:53.173+00:00
   entries:
+  - path: Assets\Robot.cs
+    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Robot.cs
+    projectPath: Assets\Robot.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\scene.unity
+    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\scene.unity
+    projectPath: Assets\scene.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Library\assetDatabase3
     fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\assetDatabase3
     projectPath: Library\assetDatabase3
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\CurrentLayout-default.dwlt
+    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\CurrentLayout-default.dwlt
+    projectPath: Library\CurrentLayout-default.dwlt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -26,8 +44,8 @@ MonoBehaviour:
     fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\EditorInstance.json
     projectPath: Library\EditorInstance.json
     originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Library\gfu\cache\branches.yaml
     fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
@@ -64,27 +82,27 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\StateCache\Hierarchy\a1d69d-a558cd486d689b648a.json
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\StateCache\Hierarchy\a1d69d-a558cd486d689b648a.json
-    projectPath: Library\StateCache\Hierarchy\a1d69d-a558cd486d689b648a.json
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Library\StateCache\Hierarchy\a1d69d-mainStage.json
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\StateCache\Hierarchy\a1d69d-mainStage.json
-    projectPath: Library\StateCache\Hierarchy\a1d69d-mainStage.json
+  - path: Library\metadata\e5\e5c0601fd35d2cf4da6f36723851ad42
+    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\metadata\e5\e5c0601fd35d2cf4da6f36723851ad42
+    projectPath: Library\metadata\e5\e5c0601fd35d2cf4da6f36723851ad42
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\StateCache\SceneView\1f802c-a558cd486d689b648a.json
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\StateCache\SceneView\1f802c-a558cd486d689b648a.json
-    projectPath: Library\StateCache\SceneView\1f802c-a558cd486d689b648a.json
+  - path: Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
     originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: RobotScripts\PIDBalancer.py
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDBalancer.py
-    projectPath: RobotScripts\PIDBalancer.py
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
+    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\StateCache\Hierarchy\a1d69d-mainStage.json
+    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\StateCache\Hierarchy\a1d69d-mainStage.json
+    projectPath: Library\StateCache\Hierarchy\a1d69d-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -92,473 +110,29 @@ MonoBehaviour:
     fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\__Backupscenes\0.backup
     projectPath: Temp\__Backupscenes\0.backup
     originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Temp\ProcessJobs\e9a6970f79cd12d8b075e7d72f1b07cb.bakert
     fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\ProcessJobs\e9a6970f79cd12d8b075e7d72f1b07cb.bakert
     projectPath: Temp\ProcessJobs\e9a6970f79cd12d8b075e7d72f1b07cb.bakert
     originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Temp\UnityLockfile
     fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityLockfile
     projectPath: Temp\UnityLockfile
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-02d36a2e767c04748ac9af6d7be3cd57
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-02d36a2e767c04748ac9af6d7be3cd57
-    projectPath: Temp\UnityTempFile-02d36a2e767c04748ac9af6d7be3cd57
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-032815b52260da749bda84d805ce90f7
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-032815b52260da749bda84d805ce90f7
-    projectPath: Temp\UnityTempFile-032815b52260da749bda84d805ce90f7
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-04223d6ca33328b4db4d466fa03731db
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-04223d6ca33328b4db4d466fa03731db
-    projectPath: Temp\UnityTempFile-04223d6ca33328b4db4d466fa03731db
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-04ea4b9497434e9439e2120663c95e9e
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-04ea4b9497434e9439e2120663c95e9e
-    projectPath: Temp\UnityTempFile-04ea4b9497434e9439e2120663c95e9e
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-1076115df43469e479ca0b3f9ab7b4bc
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-1076115df43469e479ca0b3f9ab7b4bc
-    projectPath: Temp\UnityTempFile-1076115df43469e479ca0b3f9ab7b4bc
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-123fb44f45e3ca145ba75f6a946c6e08
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-123fb44f45e3ca145ba75f6a946c6e08
-    projectPath: Temp\UnityTempFile-123fb44f45e3ca145ba75f6a946c6e08
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-1b87833157fc9c043baaef2c53b7ff5c
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-1b87833157fc9c043baaef2c53b7ff5c
-    projectPath: Temp\UnityTempFile-1b87833157fc9c043baaef2c53b7ff5c
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-1c14b02b53d775e48893d7311ee782e5
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-1c14b02b53d775e48893d7311ee782e5
-    projectPath: Temp\UnityTempFile-1c14b02b53d775e48893d7311ee782e5
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-1cd66ae19169e7e43869be7cb66d8870
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-1cd66ae19169e7e43869be7cb66d8870
-    projectPath: Temp\UnityTempFile-1cd66ae19169e7e43869be7cb66d8870
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-25d35e775fd7e994aa9af5d1a693736a
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-25d35e775fd7e994aa9af5d1a693736a
-    projectPath: Temp\UnityTempFile-25d35e775fd7e994aa9af5d1a693736a
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-2a9c4993928d63340afaa3da285507cc
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-2a9c4993928d63340afaa3da285507cc
-    projectPath: Temp\UnityTempFile-2a9c4993928d63340afaa3da285507cc
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-2ebd22f83ed705b4ab6574d775ec466b
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-2ebd22f83ed705b4ab6574d775ec466b
-    projectPath: Temp\UnityTempFile-2ebd22f83ed705b4ab6574d775ec466b
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-2fbf1e63b6294c34581551a3e98dadf8
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-2fbf1e63b6294c34581551a3e98dadf8
-    projectPath: Temp\UnityTempFile-2fbf1e63b6294c34581551a3e98dadf8
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-305f249f14de01f43a8ab9de184b4c2f
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-305f249f14de01f43a8ab9de184b4c2f
-    projectPath: Temp\UnityTempFile-305f249f14de01f43a8ab9de184b4c2f
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-33b64fddde91a1e4794e7bb09334d2dd
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-33b64fddde91a1e4794e7bb09334d2dd
-    projectPath: Temp\UnityTempFile-33b64fddde91a1e4794e7bb09334d2dd
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-3cf8f54838800224389f9bd983624e1b
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-3cf8f54838800224389f9bd983624e1b
-    projectPath: Temp\UnityTempFile-3cf8f54838800224389f9bd983624e1b
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-47764da0b5da0e444a121986f0e88cbb
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-47764da0b5da0e444a121986f0e88cbb
-    projectPath: Temp\UnityTempFile-47764da0b5da0e444a121986f0e88cbb
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-4948b54292bcc1645a86aebdf45c5ac3
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-4948b54292bcc1645a86aebdf45c5ac3
-    projectPath: Temp\UnityTempFile-4948b54292bcc1645a86aebdf45c5ac3
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-4a9efe2777e32f4499cdfd28cce2c092
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-4a9efe2777e32f4499cdfd28cce2c092
-    projectPath: Temp\UnityTempFile-4a9efe2777e32f4499cdfd28cce2c092
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-4b7775fe9ed80c44598957e0bae59de3
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-4b7775fe9ed80c44598957e0bae59de3
-    projectPath: Temp\UnityTempFile-4b7775fe9ed80c44598957e0bae59de3
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-4cf907992941edc40acac11421447eee
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-4cf907992941edc40acac11421447eee
-    projectPath: Temp\UnityTempFile-4cf907992941edc40acac11421447eee
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-4f2646ff47c8865469d0eed9635c26ee
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-4f2646ff47c8865469d0eed9635c26ee
-    projectPath: Temp\UnityTempFile-4f2646ff47c8865469d0eed9635c26ee
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-4f7cb4c44bab24446a3ae6e637ca10ac
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-4f7cb4c44bab24446a3ae6e637ca10ac
-    projectPath: Temp\UnityTempFile-4f7cb4c44bab24446a3ae6e637ca10ac
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-50b7e6c6c7e8d5048a669df153dcf863
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-50b7e6c6c7e8d5048a669df153dcf863
-    projectPath: Temp\UnityTempFile-50b7e6c6c7e8d5048a669df153dcf863
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-5255cf4a4cc048a4e97b243c8fae9f47
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-5255cf4a4cc048a4e97b243c8fae9f47
-    projectPath: Temp\UnityTempFile-5255cf4a4cc048a4e97b243c8fae9f47
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-539df5f93d551ed4495dca8dffb44059
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-539df5f93d551ed4495dca8dffb44059
-    projectPath: Temp\UnityTempFile-539df5f93d551ed4495dca8dffb44059
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-5de2bdd6c102f814a83b6e24fa4cb5e8
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-5de2bdd6c102f814a83b6e24fa4cb5e8
-    projectPath: Temp\UnityTempFile-5de2bdd6c102f814a83b6e24fa4cb5e8
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-6329f0fd00fb7314bb5991994b23a979
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-6329f0fd00fb7314bb5991994b23a979
-    projectPath: Temp\UnityTempFile-6329f0fd00fb7314bb5991994b23a979
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-664bd0924bc2ab94081498d6458cd66d
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-664bd0924bc2ab94081498d6458cd66d
-    projectPath: Temp\UnityTempFile-664bd0924bc2ab94081498d6458cd66d
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-68211af7a2fab3f4caea89345bb65411
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-68211af7a2fab3f4caea89345bb65411
-    projectPath: Temp\UnityTempFile-68211af7a2fab3f4caea89345bb65411
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-6994f0e05542cc444874ea07ea4b0bf0
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-6994f0e05542cc444874ea07ea4b0bf0
-    projectPath: Temp\UnityTempFile-6994f0e05542cc444874ea07ea4b0bf0
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-6b14561ee639bf4478294996121e0e5a
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-6b14561ee639bf4478294996121e0e5a
-    projectPath: Temp\UnityTempFile-6b14561ee639bf4478294996121e0e5a
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-736465c1a6ccb7c418b5cd71a1bc4bba
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-736465c1a6ccb7c418b5cd71a1bc4bba
-    projectPath: Temp\UnityTempFile-736465c1a6ccb7c418b5cd71a1bc4bba
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-73bafd9643b73b54fbcf0b527f28a552
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-73bafd9643b73b54fbcf0b527f28a552
-    projectPath: Temp\UnityTempFile-73bafd9643b73b54fbcf0b527f28a552
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-7499e893842ee9e4fabebf23ba83af52
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-7499e893842ee9e4fabebf23ba83af52
-    projectPath: Temp\UnityTempFile-7499e893842ee9e4fabebf23ba83af52
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-7abb4a7c7ba3d3d439f5b210e29727d7
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-7abb4a7c7ba3d3d439f5b210e29727d7
-    projectPath: Temp\UnityTempFile-7abb4a7c7ba3d3d439f5b210e29727d7
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-8633c1cb2893bb544ba5fa23f00724c1
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-8633c1cb2893bb544ba5fa23f00724c1
-    projectPath: Temp\UnityTempFile-8633c1cb2893bb544ba5fa23f00724c1
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-867243a945999754ea04c43a81572d61
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-867243a945999754ea04c43a81572d61
-    projectPath: Temp\UnityTempFile-867243a945999754ea04c43a81572d61
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-8af81b8f8e81bbf43b30dd6e24afc20d
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-8af81b8f8e81bbf43b30dd6e24afc20d
-    projectPath: Temp\UnityTempFile-8af81b8f8e81bbf43b30dd6e24afc20d
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-8d1d24033aab58f47816c34c28b82b9f
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-8d1d24033aab58f47816c34c28b82b9f
-    projectPath: Temp\UnityTempFile-8d1d24033aab58f47816c34c28b82b9f
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-8fbf139501dc82f4caef71e2ac1a177f
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-8fbf139501dc82f4caef71e2ac1a177f
-    projectPath: Temp\UnityTempFile-8fbf139501dc82f4caef71e2ac1a177f
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-934ef054b7f372d4c93935345f7f46f9
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-934ef054b7f372d4c93935345f7f46f9
-    projectPath: Temp\UnityTempFile-934ef054b7f372d4c93935345f7f46f9
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-972abd733c65333458a09493724d1d66
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-972abd733c65333458a09493724d1d66
-    projectPath: Temp\UnityTempFile-972abd733c65333458a09493724d1d66
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-9cd6cae763ee1de4f88659369c6fc972
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-9cd6cae763ee1de4f88659369c6fc972
-    projectPath: Temp\UnityTempFile-9cd6cae763ee1de4f88659369c6fc972
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-9f18d9da507224c4aa490b5060eae676
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-9f18d9da507224c4aa490b5060eae676
-    projectPath: Temp\UnityTempFile-9f18d9da507224c4aa490b5060eae676
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-a04767307f4dde244bb8c22024167790
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-a04767307f4dde244bb8c22024167790
-    projectPath: Temp\UnityTempFile-a04767307f4dde244bb8c22024167790
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-a2a26e8ff3be41741a858ec3e22984b5
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-a2a26e8ff3be41741a858ec3e22984b5
-    projectPath: Temp\UnityTempFile-a2a26e8ff3be41741a858ec3e22984b5
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-a2b7b54bd2a36af488862ddfbf29af0a
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-a2b7b54bd2a36af488862ddfbf29af0a
-    projectPath: Temp\UnityTempFile-a2b7b54bd2a36af488862ddfbf29af0a
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-b34073751b9573141a07863b43c390d8
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-b34073751b9573141a07863b43c390d8
-    projectPath: Temp\UnityTempFile-b34073751b9573141a07863b43c390d8
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-b46e0b8a61839f940880b5671e7f2db8
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-b46e0b8a61839f940880b5671e7f2db8
-    projectPath: Temp\UnityTempFile-b46e0b8a61839f940880b5671e7f2db8
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-c1b5817412a68ae44b62810b9f314cc4
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-c1b5817412a68ae44b62810b9f314cc4
-    projectPath: Temp\UnityTempFile-c1b5817412a68ae44b62810b9f314cc4
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-c2ab8deb9fd3d614eafb6346ebbc552b
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-c2ab8deb9fd3d614eafb6346ebbc552b
-    projectPath: Temp\UnityTempFile-c2ab8deb9fd3d614eafb6346ebbc552b
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-c567a88331957ee4d8a03094f35fb14f
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-c567a88331957ee4d8a03094f35fb14f
-    projectPath: Temp\UnityTempFile-c567a88331957ee4d8a03094f35fb14f
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-c775cfd46cfed314cb3ca195a06df250
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-c775cfd46cfed314cb3ca195a06df250
-    projectPath: Temp\UnityTempFile-c775cfd46cfed314cb3ca195a06df250
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-c93388922a0db244f9fa1fa6e8c6dfa5
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-c93388922a0db244f9fa1fa6e8c6dfa5
-    projectPath: Temp\UnityTempFile-c93388922a0db244f9fa1fa6e8c6dfa5
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-cf2dd0cf950efc3489e0fccbe1bbb406
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-cf2dd0cf950efc3489e0fccbe1bbb406
-    projectPath: Temp\UnityTempFile-cf2dd0cf950efc3489e0fccbe1bbb406
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-d2a01346681112642b1433043d63cb4f
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-d2a01346681112642b1433043d63cb4f
-    projectPath: Temp\UnityTempFile-d2a01346681112642b1433043d63cb4f
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-d681a52776d76534f9b26aae528482e4
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-d681a52776d76534f9b26aae528482e4
-    projectPath: Temp\UnityTempFile-d681a52776d76534f9b26aae528482e4
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-d6d27fde20358b84bac90c86e438af32
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-d6d27fde20358b84bac90c86e438af32
-    projectPath: Temp\UnityTempFile-d6d27fde20358b84bac90c86e438af32
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-d945ad9cd2b907e4f81bab8500867fc0
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-d945ad9cd2b907e4f81bab8500867fc0
-    projectPath: Temp\UnityTempFile-d945ad9cd2b907e4f81bab8500867fc0
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-daf65c88403ec7f428b3a25dbe7ff400
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-daf65c88403ec7f428b3a25dbe7ff400
-    projectPath: Temp\UnityTempFile-daf65c88403ec7f428b3a25dbe7ff400
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-dcb6e373b68d6994b85f3dc003a9353c
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-dcb6e373b68d6994b85f3dc003a9353c
-    projectPath: Temp\UnityTempFile-dcb6e373b68d6994b85f3dc003a9353c
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-e1e86060ee9573c45a6092e2832c5fa8
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-e1e86060ee9573c45a6092e2832c5fa8
-    projectPath: Temp\UnityTempFile-e1e86060ee9573c45a6092e2832c5fa8
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-e38b5288a76d05644b741532cce61769
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-e38b5288a76d05644b741532cce61769
-    projectPath: Temp\UnityTempFile-e38b5288a76d05644b741532cce61769
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-e403d4d6d3f21c544bf966b740d7297e
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-e403d4d6d3f21c544bf966b740d7297e
-    projectPath: Temp\UnityTempFile-e403d4d6d3f21c544bf966b740d7297e
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-e5dd9394eedc0284c9304bcc1064ff37
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-e5dd9394eedc0284c9304bcc1064ff37
-    projectPath: Temp\UnityTempFile-e5dd9394eedc0284c9304bcc1064ff37
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-e6aabfb421ba41d4a843cbaa1f5648c6
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-e6aabfb421ba41d4a843cbaa1f5648c6
-    projectPath: Temp\UnityTempFile-e6aabfb421ba41d4a843cbaa1f5648c6
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-e6da225bce25255449904a14e998668c
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-e6da225bce25255449904a14e998668c
-    projectPath: Temp\UnityTempFile-e6da225bce25255449904a14e998668c
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-e9fcac6c9356b3f44ac52b39778facd5
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-e9fcac6c9356b3f44ac52b39778facd5
-    projectPath: Temp\UnityTempFile-e9fcac6c9356b3f44ac52b39778facd5
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-ec33f567c773d3a45b241cae04a49b69
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-ec33f567c773d3a45b241cae04a49b69
-    projectPath: Temp\UnityTempFile-ec33f567c773d3a45b241cae04a49b69
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-eca58b1834141304e98cfa5a0745d8f1
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-eca58b1834141304e98cfa5a0745d8f1
-    projectPath: Temp\UnityTempFile-eca58b1834141304e98cfa5a0745d8f1
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-f437b327f1855874792f67d9e7f07500
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-f437b327f1855874792f67d9e7f07500
-    projectPath: Temp\UnityTempFile-f437b327f1855874792f67d9e7f07500
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-f5f7ffcf94d7c0046a16e67a10175e74
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-f5f7ffcf94d7c0046a16e67a10175e74
-    projectPath: Temp\UnityTempFile-f5f7ffcf94d7c0046a16e67a10175e74
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-f65b9e76f2fda0249ad78641e15c2f49
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-f65b9e76f2fda0249ad78641e15c2f49
-    projectPath: Temp\UnityTempFile-f65b9e76f2fda0249ad78641e15c2f49
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-fc50b0c52702c2443b4fbf15bab5dfc7
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-fc50b0c52702c2443b4fbf15bab5dfc7
-    projectPath: Temp\UnityTempFile-fc50b0c52702c2443b4fbf15bab5dfc7
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
-  - path: Temp\UnityTempFile-fe9f97f89abbb4049b8706659acb9873
-    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-fe9f97f89abbb4049b8706659acb9873
-    projectPath: Temp\UnityTempFile-fe9f97f89abbb4049b8706659acb9873
-    originalPath: 
-    indexStatus: 4
-    workTreeStatus: 0
+  - path: Temp\UnityTempFile-17c8dcc2fe12f304ba55802bb29c6054
+    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-17c8dcc2fe12f304ba55802bb29c6054
+    projectPath: Temp\UnityTempFile-17c8dcc2fe12f304ba55802bb29c6054
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Temp\UnityTempFile-f4aba9d729d2cfa4db01586842a80730
+    fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Temp\UnityTempFile-f4aba9d729d2cfa4db01586842a80730
+    projectPath: Temp\UnityTempFile-f4aba9d729d2cfa4db01586842a80730
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
