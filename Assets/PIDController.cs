@@ -9,13 +9,13 @@ using System;
 public class PIDController : MonoBehaviour {
 
     [Tooltip("Proportional constant (counters current error)")]
-    [SerializeField] private float Kp = 59f; // 67
+    [SerializeField] private float Kp = 20f; // 67
 
     [Tooltip("Integral constant (counters cumulated error)")]
-    [SerializeField] private float Ki = 10f; //14
+    [SerializeField] private float Ki = 1; //14
 
     [Tooltip("Derivative constant (fights oscillation)")]
-    [SerializeField] private float Kd = 240f; //125
+    [SerializeField] private float Kd = 5f; //125
 
     [Tooltip("Current control value")]
     [SerializeField] private float value = 0;
@@ -52,7 +52,6 @@ public class PIDController : MonoBehaviour {
         errorPrior = error;
 
         value = Kp * error + Ki * integral + Kd * derivative;
-        // value -> Mathf.Clamp01(values)??
         Debug.Log("Integral = " + integral + "\tErrorPrior = " + errorPrior + "\tValue = " + value);
         return value;
     }

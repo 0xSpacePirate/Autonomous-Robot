@@ -7,8 +7,8 @@ public class Robot : MonoBehaviour
 {
     Robot robot;
     public float targetAltitude = -1f;
-    public PIDController pid;
     public Rigidbody rigidBody;
+    public PIDController pid;
     public Vector3 originalPosition;
     public Quaternion originalRotation;
     [SerializeField] float mainThrust = 100f;
@@ -34,6 +34,29 @@ public class Robot : MonoBehaviour
         RespondToInput();
     }
 
+    private void BalanceRobot()
+    {
+        float currentAltitude = transform.rotation.eulerAngles.z;
+
+        Debug.Log("Current Altitude: " + currentAltitude);
+
+        float error = currentAltitude;
+        Debug.Log("Error=" + error);
+
+        //falling forward;
+        if (transform.rotation.eulerAngles.z < 0 && transform.rotation.eulerAngles.z >= -40)
+        {
+            GetComponent<Rigidbody>().AddTorque(transform.forward * pid.Update(error) * transform.rotation.eulerAngles.z);
+        }
+
+        //falling backwards
+        if (transform.rotation.eulerAngles.z > 0 && transform.rotation.eulerAngles.z <= 40)
+        {
+            GetComponent<Rigidbody>().AddTorque(-transform.forward * pid.Update(error) * transform.rotation.eulerAngles.z);
+        }
+        //rigidBody.AddForce(Vector3.forward * Time.deltaTime * 10);
+    }
+
     private void RespondToInput()
     {
         if (Input.GetKey(KeyCode.W))
@@ -44,41 +67,23 @@ public class Robot : MonoBehaviour
         {
             transform.Translate(Vector3.right * Time.deltaTime);
         }
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Translate(Vector3.forward * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.Translate(-Vector3.forward * Time.deltaTime);
+        }
         if (Input.GetKey(KeyCode.R))
         {
-            //rigidBody.transform.position = originalPosition;
-            //rigidBody.transform.rotation = Quaternion.identity;
+            rigidBody.transform.position = originalPosition;
+            rigidBody.transform.rotation = Quaternion.identity;
 
-            resetPosition();
-            resetRotation();
+            //resetPosition();
+            //resetRotation();
             pid.reset();
         }
-    }
-
-    private void BalanceRobot()
-    {
-        float currentAltitude = transform.position.z;
-        float error = -currentAltitude;
-        Debug.Log("Error=" + error);
-        Debug.Log(transform.rotation.eulerAngles.z + " - " + 360 + " = " + (-(transform.rotation.eulerAngles.z - 360)));
-
-        //falling forward;
-        if (transform.rotation.eulerAngles.z < 0)
-        {
-            GetComponent<Rigidbody>().AddTorque(transform.forward * pid.Update(error) * -(transform.rotation.eulerAngles.z - 360));
-            Debug.Log("Balance Robot in < 0");
-        }
-
-        //falling backwards
-        if (transform.rotation.eulerAngles.z >= 0)
-        {
-            GetComponent<Rigidbody>().AddTorque(-transform.forward * pid.Update(error) * transform.rotation.eulerAngles.z);
-
-            //rigidBody.AddTorque(-transform.forward * pid.Update(error) * transform.rotation.eulerAngles.z);
-
-            Debug.Log("Balance Robot in > 0");
-        }
-        //rigidBody.AddForce(Vector3.forward * Time.deltaTime * 10);
     }
 
     private void resetWhenBalanceLost()
@@ -100,6 +105,7 @@ public class Robot : MonoBehaviour
     {
         rigidBody.transform.rotation = originalRotation;
     }
+
 }
 
 

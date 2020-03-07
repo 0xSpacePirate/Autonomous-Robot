@@ -13,9 +13,1325 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2020-01-29T14:06:02.994+00:00
-  initializedAtString: 2020-01-29T14:06:02.514+00:00
+  lastUpdatedAtString: 2020-03-07T15:30:57.407+00:00
+  initializedAtString: 2020-03-07T15:30:57.095+00:00
   log:
+  - commitID: b92ffa8eb2307f814adc37e9f7919f93a27b0db5
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: robot design update - added place for the servo motor on the robot's
+      legs
+    description: 
+    timeString: 2020-03-05T20:25:27.000+00:00
+    commitTimeString: 2020-03-05T20:25:27.000+00:00
+    changes:
+    - path: RobotAutoCAD\Robot (Prototype 1) FINAL.FCStd
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot (Prototype
+        1) FINAL.FCStd
+      projectPath: RobotAutoCAD\Robot (Prototype 1) FINAL.FCStd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot (Prototype 1) FINAL.FCStd1
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot (Prototype
+        1) FINAL.FCStd1
+      projectPath: RobotAutoCAD\Robot (Prototype 1) FINAL.FCStd1
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 02895244dd562434598429aea4069678abb5295b
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: added output filter, move bug fixed, PID tune, getting closer!
+    description: 
+    timeString: 2020-03-03T22:10:20.000+00:00
+    commitTimeString: 2020-03-03T22:10:20.000+00:00
+    changes:
+    - path: RobotScripts\GyroFilter.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\GyroFilter.py
+      projectPath: RobotScripts\GyroFilter.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\GyroFilter.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\GyroFilter.pyc
+      projectPath: RobotScripts\GyroFilter.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\LeftServo.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\LeftServo.pyc
+      projectPath: RobotScripts\LeftServo.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDBalancer.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDBalancer.py
+      projectPath: RobotScripts\PIDBalancer.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDBalancer.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDBalancer.pyc
+      projectPath: RobotScripts\PIDBalancer.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDController.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDController.pyc
+      projectPath: RobotScripts\PIDController.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\RightServo.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\RightServo.py
+      projectPath: RobotScripts\RightServo.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\RightServo.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\RightServo.pyc
+      projectPath: RobotScripts\RightServo.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.py
+      projectPath: RobotScripts\Robot.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.pyc
+      projectPath: RobotScripts\Robot.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 5a440338cdac59f28b3b78da4c3654c1e02b6c34
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: Small changes to PID tune
+    description: 
+    timeString: 2020-03-02T23:05:42.000+00:00
+    commitTimeString: 2020-03-02T23:05:42.000+00:00
+    changes:
+    - path: RobotScripts\RightServo.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\RightServo.py
+      projectPath: RobotScripts\RightServo.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 36a1e49f942a42bf3258ab477ff5c04de481d25c
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: PID tune, almost balancing | bug fixes
+    description: 
+    timeString: 2020-03-01T17:30:38.000+00:00
+    commitTimeString: 2020-03-01T17:30:38.000+00:00
+    changes:
+    - path: RobotScripts\GyroFilter.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\GyroFilter.py
+      projectPath: RobotScripts\GyroFilter.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDBalancer.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDBalancer.py
+      projectPath: RobotScripts\PIDBalancer.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\RightServo.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\RightServo.py
+      projectPath: RobotScripts\RightServo.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.py
+      projectPath: RobotScripts\Robot.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: f5041171589caa6347ec4c6197fe33c5856e11e0
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: gyroscope reading bug fixed
+    description: 
+    timeString: 2020-03-01T14:45:46.000+00:00
+    commitTimeString: 2020-03-01T14:45:46.000+00:00
+    changes:
+    - path: RobotScripts\GyroReader.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\GyroReader.py
+      projectPath: RobotScripts\GyroReader.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDBalancer.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDBalancer.py
+      projectPath: RobotScripts\PIDBalancer.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDController.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDController.py
+      projectPath: RobotScripts\PIDController.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.py
+      projectPath: RobotScripts\Robot.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: ed27c213299fe1b58c1d2d3e06033eafbf9ebd1c
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: small while loop values update
+    description: 
+    timeString: 2020-02-29T20:14:59.000+00:00
+    commitTimeString: 2020-02-29T20:14:59.000+00:00
+    changes:
+    - path: RobotScripts\PIDController.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDController.py
+      projectPath: RobotScripts\PIDController.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\RL.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\RL.py
+      projectPath: RobotScripts\RL.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.py
+      projectPath: RobotScripts\Robot.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 4b1fe11a59614db6ad1578a1c8a80d2acbc85e67
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: PID output being zero bug fixed
+    description: 
+    timeString: 2020-02-29T18:46:45.000+00:00
+    commitTimeString: 2020-02-29T18:46:45.000+00:00
+    changes:
+    - path: RobotScripts\Robot.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.py
+      projectPath: RobotScripts\Robot.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 6afb536af9fc5bee6e5575ae635fda772ffacfe0
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: 'Mapped PID output - done, big fixes. refactor, tests. Has to be fixed:
+      for the last tests the output from PID is zero'
+    description: 
+    timeString: 2020-02-29T18:08:28.000+00:00
+    commitTimeString: 2020-02-29T18:08:28.000+00:00
+    changes:
+    - path: RobotScripts\LeftServo.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\LeftServo.py
+      projectPath: RobotScripts\LeftServo.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDController.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDController.py
+      projectPath: RobotScripts\PIDController.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\RightServo.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\RightServo.py
+      projectPath: RobotScripts\RightServo.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.py
+      projectPath: RobotScripts\Robot.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 674490e5cf454edb52ca6ffdb5cd4e085fcf6868
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: pid updates, refactor, additional methods
+    description: 
+    timeString: 2020-02-27T21:04:00.000+00:00
+    commitTimeString: 2020-02-27T21:04:00.000+00:00
+    changes:
+    - path: .idea\inspectionProfiles\Project_Default.xml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\.idea\inspectionProfiles\Project_Default.xml
+      projectPath: .idea\inspectionProfiles\Project_Default.xml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\GyroFilter.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\GyroFilter.py
+      projectPath: RobotScripts\GyroFilter.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDBalancer.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDBalancer.py
+      projectPath: RobotScripts\PIDBalancer.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDController.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDController.py
+      projectPath: RobotScripts\PIDController.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.py
+      projectPath: RobotScripts\Robot.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: e2bba93430579da232a7bb644cb4b5ea37d738be
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: added calc_xy_values(), more comments, tests with calc_xy_values() -
+      successful
+    description: 
+    timeString: 2020-02-26T22:11:59.000+00:00
+    commitTimeString: 2020-02-26T22:11:59.000+00:00
+    changes:
+    - path: RobotScripts\GyroFilter.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\GyroFilter.py
+      projectPath: RobotScripts\GyroFilter.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDBalancer.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDBalancer.py
+      projectPath: RobotScripts\PIDBalancer.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.py
+      projectPath: RobotScripts\Robot.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 8e726f42c78ba248dd873bd2aabc3d4283ba2c20
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: added gyroscope and accelerometer test values, file, comment
+    description: 
+    timeString: 2020-02-26T21:00:29.000+00:00
+    commitTimeString: 2020-02-26T21:00:29.000+00:00
+    changes:
+    - path: RobotScripts\PIDBalancer.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDBalancer.py
+      projectPath: RobotScripts\PIDBalancer.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\tests\balance_numbers_tests.txt
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\tests\balance_numbers_tests.txt
+      projectPath: RobotScripts\tests\balance_numbers_tests.txt
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: 5f7dcf88df13834d0c74ed20b927fd54fef50b25
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: removed unnecessary comments
+    description: 
+    timeString: 2020-02-25T21:42:34.000+00:00
+    commitTimeString: 2020-02-25T21:42:34.000+00:00
+    changes:
+    - path: RobotScripts\GyroFilter.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\GyroFilter.py
+      projectPath: RobotScripts\GyroFilter.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDBalancer.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDBalancer.py
+      projectPath: RobotScripts\PIDBalancer.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: a6bbdaf6bc7872f43ee88a57bb80a7945d4cb1ec
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: bug fixes
+    description: 
+    timeString: 2020-02-24T22:15:06.000+00:00
+    commitTimeString: 2020-02-24T22:15:06.000+00:00
+    changes:
+    - path: RobotScripts\GyroFilter.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\GyroFilter.py
+      projectPath: RobotScripts\GyroFilter.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\GyroFilter.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\GyroFilter.pyc
+      projectPath: RobotScripts\GyroFilter.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDBalancer.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDBalancer.pyc
+      projectPath: RobotScripts\PIDBalancer.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\RightServo.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\RightServo.py
+      projectPath: RobotScripts\RightServo.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\RightServo.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\RightServo.pyc
+      projectPath: RobotScripts\RightServo.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.py
+      projectPath: RobotScripts\Robot.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.pyc
+      projectPath: RobotScripts\Robot.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: dc184f1302f50bc01a664025de2404a3537f7b28
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: fixed bugs, refactor
+    description: 
+    timeString: 2020-02-24T16:08:31.000+00:00
+    commitTimeString: 2020-02-24T16:08:31.000+00:00
+    changes:
+    - path: RobotScripts\GyroFilter.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\GyroFilter.py
+      projectPath: RobotScripts\GyroFilter.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\GyroFilter.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\GyroFilter.pyc
+      projectPath: RobotScripts\GyroFilter.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDBalancer.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDBalancer.py
+      projectPath: RobotScripts\PIDBalancer.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDBalancer.py.save
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDBalancer.py.save
+      projectPath: RobotScripts\PIDBalancer.py.save
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RobotScripts\PIDBalancer.py.save.1
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDBalancer.py.save.1
+      projectPath: RobotScripts\PIDBalancer.py.save.1
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RobotScripts\PIDBalancer.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDBalancer.pyc
+      projectPath: RobotScripts\PIDBalancer.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDController.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDController.pyc
+      projectPath: RobotScripts\PIDController.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\RightServo.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\RightServo.py
+      projectPath: RobotScripts\RightServo.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\RightServo.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\RightServo.pyc
+      projectPath: RobotScripts\RightServo.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.py
+      projectPath: RobotScripts\Robot.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.pyc
+      projectPath: RobotScripts\Robot.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\__pycache__\PIDBalancer.cpython-37.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\__pycache__\PIDBalancer.cpython-37.pyc
+      projectPath: RobotScripts\__pycache__\PIDBalancer.cpython-37.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\__pycache__\RightServo.cpython-37.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\__pycache__\RightServo.cpython-37.pyc
+      projectPath: RobotScripts\__pycache__\RightServo.cpython-37.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\__pycache__\Robot.cpython-37.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\__pycache__\Robot.cpython-37.pyc
+      projectPath: RobotScripts\__pycache__\Robot.cpython-37.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 7fb3ef16f0e8fad8f2387f920d84c7a1387a39c3
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: refactor + wheel tests bugs fixed(issue was caused by motors.stop())
+    description: 
+    timeString: 2020-02-19T22:18:39.000+00:00
+    commitTimeString: 2020-02-19T22:18:39.000+00:00
+    changes:
+    - path: .idea\inspectionProfiles\Project_Default.xml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\.idea\inspectionProfiles\Project_Default.xml
+      projectPath: .idea\inspectionProfiles\Project_Default.xml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\GyroFilter.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\GyroFilter.py
+      projectPath: RobotScripts\GyroFilter.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.py
+      projectPath: RobotScripts\Robot.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: f26d7665480057a1dc78426c7107f22851be2c56
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: indendation issues fixed
+    description: 
+    timeString: 2020-02-19T21:24:25.000+00:00
+    commitTimeString: 2020-02-19T21:24:25.000+00:00
+    changes:
+    - path: RobotScripts\PIDController.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDController.py
+      projectPath: RobotScripts\PIDController.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.py
+      projectPath: RobotScripts\Robot.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 52b1645da6ce9c68ca364382d970c1943d6dba5b
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: bug fixes, refactor
+    description: 
+    timeString: 2020-02-18T22:18:09.000+00:00
+    commitTimeString: 2020-02-18T22:18:09.000+00:00
+    changes:
+    - path: RobotScripts\GyroFilter.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\GyroFilter.pyc
+      projectPath: RobotScripts\GyroFilter.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDBalancer.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDBalancer.py
+      projectPath: RobotScripts\PIDBalancer.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDBalancer.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDBalancer.pyc
+      projectPath: RobotScripts\PIDBalancer.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDController.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDController.py
+      projectPath: RobotScripts\PIDController.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDController.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDController.pyc
+      projectPath: RobotScripts\PIDController.pyc
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.py
+      projectPath: RobotScripts\Robot.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.pyc
+      projectPath: RobotScripts\Robot.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\__pycache__\GyroFilter.cpython-37.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\__pycache__\GyroFilter.cpython-37.pyc
+      projectPath: RobotScripts\__pycache__\GyroFilter.cpython-37.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\__pycache__\LeftServo.cpython-37.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\__pycache__\LeftServo.cpython-37.pyc
+      projectPath: RobotScripts\__pycache__\LeftServo.cpython-37.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\__pycache__\RightServo.cpython-37.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\__pycache__\RightServo.cpython-37.pyc
+      projectPath: RobotScripts\__pycache__\RightServo.cpython-37.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\__pycache__\Robot.cpython-37.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\__pycache__\Robot.cpython-37.pyc
+      projectPath: RobotScripts\__pycache__\Robot.cpython-37.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\robotLaunchConf.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\robotLaunchConf.py
+      projectPath: RobotScripts\robotLaunchConf.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 9362da9c2ff67838bec975f9e2cf3e8f6ded847c
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: Robot prototype 1 - fixed the Rod axis alignment
+    description: 
+    timeString: 2020-02-12T21:58:39.000+00:00
+    commitTimeString: 2020-02-12T21:58:39.000+00:00
+    changes:
+    - path: RobotAutoCAD\Robot (Prototype 1) FINAL.FCStd
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot (Prototype
+        1) FINAL.FCStd
+      projectPath: RobotAutoCAD\Robot (Prototype 1) FINAL.FCStd
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot (Prototype 1) FINAL.FCStd1
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot (Prototype
+        1) FINAL.FCStd1
+      projectPath: RobotAutoCAD\Robot (Prototype 1) FINAL.FCStd1
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot( Prototype 1) Fixed Flaws.FCStd
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot( Prototype
+        1) Fixed Flaws.FCStd
+      projectPath: RobotAutoCAD\Robot( Prototype 1) Fixed Flaws.FCStd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot( Prototype 1) Fixed Flaws.FCStd1
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot( Prototype
+        1) Fixed Flaws.FCStd1
+      projectPath: RobotAutoCAD\Robot( Prototype 1) Fixed Flaws.FCStd1
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 5312f10bf6b84c462ab9899ef23dea1e42133145
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: Prototype 1 - secondary flaws found and fixed - legs sides not flat on
+      the very top, a micro hole between the servo holder and the leg
+    description: 
+    timeString: 2020-02-12T18:20:40.000+00:00
+    commitTimeString: 2020-02-12T18:20:40.000+00:00
+    changes:
+    - path: RobotAutoCAD\Robot( Prototype 1) Fixed Flaws.FCStd
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot( Prototype
+        1) Fixed Flaws.FCStd
+      projectPath: RobotAutoCAD\Robot( Prototype 1) Fixed Flaws.FCStd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot( Prototype 1) Fixed Flaws.FCStd1
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot( Prototype
+        1) Fixed Flaws.FCStd1
+      projectPath: RobotAutoCAD\Robot( Prototype 1) Fixed Flaws.FCStd1
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 27e4195d58de4c46017ce79d22bd71818d0d2e91
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: Robot mechanical prototype 1 - design flaws fixed
+    description: 
+    timeString: 2020-02-12T16:07:43.000+00:00
+    commitTimeString: 2020-02-12T16:07:43.000+00:00
+    changes:
+    - path: RobotAutoCAD\Robot( Initial final Prototype).FCStd
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot( Initial
+        final Prototype).FCStd
+      projectPath: RobotAutoCAD\Robot( Initial final Prototype).FCStd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot( Initial final Prototype).FCStd1
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot( Initial
+        final Prototype).FCStd1
+      projectPath: RobotAutoCAD\Robot( Initial final Prototype).FCStd1
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot( Prototype 1) Fixed Flaws.FCStd
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot( Prototype
+        1) Fixed Flaws.FCStd
+      projectPath: RobotAutoCAD\Robot( Prototype 1) Fixed Flaws.FCStd
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot( Prototype 1) Fixed Flaws.FCStd1
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot( Prototype
+        1) Fixed Flaws.FCStd1
+      projectPath: RobotAutoCAD\Robot( Prototype 1) Fixed Flaws.FCStd1
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: 9cf34e0d5869f4383b19648d75df2ca6ec3ab5eb
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: Robot Prototype one - design flaws->fixed, except leg rod hole and leg
+      top
+    description: 
+    timeString: 2020-02-11T22:26:15.000+00:00
+    commitTimeString: 2020-02-11T22:26:15.000+00:00
+    changes:
+    - path: RobotAutoCAD\Robot( Initial final Prototype).FCStd
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot( Initial
+        final Prototype).FCStd
+      projectPath: RobotAutoCAD\Robot( Initial final Prototype).FCStd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot( Initial final Prototype).FCStd1
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot( Initial
+        final Prototype).FCStd1
+      projectPath: RobotAutoCAD\Robot( Initial final Prototype).FCStd1
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: fefe5f92874341d854cdefb5fa7250a5f31cfa6c
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: new PID Controller, updated PIDBalancer and Robot classes
+    description: 
+    timeString: 2020-02-05T21:06:51.000+00:00
+    commitTimeString: 2020-02-05T21:06:51.000+00:00
+    changes:
+    - path: RobotScripts\PIDBalancer.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDBalancer.py
+      projectPath: RobotScripts\PIDBalancer.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDController.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDController.py
+      projectPath: RobotScripts\PIDController.py
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.py
+      projectPath: RobotScripts\Robot.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 7413b9e5f9006dd463bf8dbb4c52f60f9f9d7756
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: Update the scale of the AutoCAD robot prototype
+    description: 
+    timeString: 2020-02-05T16:47:50.000+00:00
+    commitTimeString: 2020-02-05T16:47:50.000+00:00
+    changes:
+    - path: RobotAutoCAD\Robot( Initial final Prototype).FCStd
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot( Initial
+        final Prototype).FCStd
+      projectPath: RobotAutoCAD\Robot( Initial final Prototype).FCStd
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot(edited).FCStd
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot(edited).FCStd
+      projectPath: RobotAutoCAD\Robot(edited).FCStd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot(edited).FCStd1
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot(edited).FCStd1
+      projectPath: RobotAutoCAD\Robot(edited).FCStd1
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 78faac00acfbf06e95272eed9ae9d4b93aeb321c
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: fixed indentation bugs
+    description: 
+    timeString: 2020-02-04T22:19:19.000+00:00
+    commitTimeString: 2020-02-04T22:19:19.000+00:00
+    changes:
+    - path: RobotAutoCAD\Robot(edited).FCStd
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot(edited).FCStd
+      projectPath: RobotAutoCAD\Robot(edited).FCStd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot(edited).FCStd1
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot(edited).FCStd1
+      projectPath: RobotAutoCAD\Robot(edited).FCStd1
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\GyroFilter.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\GyroFilter.py
+      projectPath: RobotScripts\GyroFilter.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\GyroFilter.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\GyroFilter.pyc
+      projectPath: RobotScripts\GyroFilter.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\LeftServo.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\LeftServo.py
+      projectPath: RobotScripts\LeftServo.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\LeftServo.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\LeftServo.pyc
+      projectPath: RobotScripts\LeftServo.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\RightServo.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\RightServo.py
+      projectPath: RobotScripts\RightServo.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\RightServo.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\RightServo.pyc
+      projectPath: RobotScripts\RightServo.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.py
+      projectPath: RobotScripts\Robot.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: e6e1c4a5489cc2f26b6e14efe28cbf33d77a4763
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: Final initial robot 3D prototype
+    description: 
+    timeString: 2020-02-04T12:05:23.000+00:00
+    commitTimeString: 2020-02-04T12:05:23.000+00:00
+    changes:
+    - path: RobotAutoCAD\Robot(edited).FCStd
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot(edited).FCStd
+      projectPath: RobotAutoCAD\Robot(edited).FCStd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot(edited).FCStd1
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot(edited).FCStd1
+      projectPath: RobotAutoCAD\Robot(edited).FCStd1
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: eeceab1ba2a4385d655131bb00cd60b6cc819620
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: Changed design of the legs
+    description: 
+    timeString: 2020-02-03T22:17:02.000+00:00
+    commitTimeString: 2020-02-03T22:17:02.000+00:00
+    changes:
+    - path: RobotAutoCAD\Robot(edited).FCStd
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot(edited).FCStd
+      projectPath: RobotAutoCAD\Robot(edited).FCStd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot(edited).FCStd1
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot(edited).FCStd1
+      projectPath: RobotAutoCAD\Robot(edited).FCStd1
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: cc2aca02794ae58af889aa31bb1c1ba35f2e1725
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: Updated design of the robot
+    description: 
+    timeString: 2020-02-03T21:53:33.000+00:00
+    commitTimeString: 2020-02-03T21:53:33.000+00:00
+    changes:
+    - path: RobotAutoCAD\Robot(edited).FCStd
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot(edited).FCStd
+      projectPath: RobotAutoCAD\Robot(edited).FCStd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot(edited).FCStd1
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot(edited).FCStd1
+      projectPath: RobotAutoCAD\Robot(edited).FCStd1
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot.FCStd
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot.FCStd
+      projectPath: RobotAutoCAD\Robot.FCStd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot.FCStd1
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot.FCStd1
+      projectPath: RobotAutoCAD\Robot.FCStd1
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 70dc1d7f8af218d750a1cbd7bbc36a0bae100878
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: did additional PWD tests
+    description: 
+    timeString: 2020-01-31T16:22:14.000+00:00
+    commitTimeString: 2020-01-31T16:22:14.000+00:00
+    changes:
+    - path: RobotAutoCAD\Robot.FCStd
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot.FCStd
+      projectPath: RobotAutoCAD\Robot.FCStd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot.FCStd1
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot.FCStd1
+      projectPath: RobotAutoCAD\Robot.FCStd1
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\GyroFilter.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\GyroFilter.py
+      projectPath: RobotScripts\GyroFilter.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\LeftServo.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\LeftServo.py
+      projectPath: RobotScripts\LeftServo.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\LeftServo.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\LeftServo.pyc
+      projectPath: RobotScripts\LeftServo.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\RightServo.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\RightServo.py
+      projectPath: RobotScripts\RightServo.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\RightServo.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\RightServo.pyc
+      projectPath: RobotScripts\RightServo.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.py
+      projectPath: RobotScripts\Robot.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.pyc
+      projectPath: RobotScripts\Robot.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\__pycache__\LeftServo.cpython-37.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\__pycache__\LeftServo.cpython-37.pyc
+      projectPath: RobotScripts\__pycache__\LeftServo.cpython-37.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\__pycache__\RightServo.cpython-37.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\__pycache__\RightServo.cpython-37.pyc
+      projectPath: RobotScripts\__pycache__\RightServo.cpython-37.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\__pycache__\Robot.cpython-37.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\__pycache__\Robot.cpython-37.pyc
+      projectPath: RobotScripts\__pycache__\Robot.cpython-37.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: ce23f8c9d1b782abe2cfdf5a13672b1ae998571f
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: did PWM tests and added comments
+    description: 
+    timeString: 2020-01-30T22:14:05.000+00:00
+    commitTimeString: 2020-01-30T22:14:05.000+00:00
+    changes:
+    - path: RobotScripts\GyroFilter.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\GyroFilter.pyc
+      projectPath: RobotScripts\GyroFilter.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\LeftServo.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\LeftServo.py
+      projectPath: RobotScripts\LeftServo.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\LeftServo.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\LeftServo.pyc
+      projectPath: RobotScripts\LeftServo.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\RightServo.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\RightServo.py
+      projectPath: RobotScripts\RightServo.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\RightServo.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\RightServo.pyc
+      projectPath: RobotScripts\RightServo.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.py
+      projectPath: RobotScripts\Robot.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.pyc
+      projectPath: RobotScripts\Robot.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\__pycache__\GyroFilter.cpython-37.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\__pycache__\GyroFilter.cpython-37.pyc
+      projectPath: RobotScripts\__pycache__\GyroFilter.cpython-37.pyc
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RobotScripts\__pycache__\GyroReader.cpython-37.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\__pycache__\GyroReader.cpython-37.pyc
+      projectPath: RobotScripts\__pycache__\GyroReader.cpython-37.pyc
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RobotScripts\__pycache__\LeftServo.cpython-37.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\__pycache__\LeftServo.cpython-37.pyc
+      projectPath: RobotScripts\__pycache__\LeftServo.cpython-37.pyc
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RobotScripts\__pycache__\PIDBalancer.cpython-37.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\__pycache__\PIDBalancer.cpython-37.pyc
+      projectPath: RobotScripts\__pycache__\PIDBalancer.cpython-37.pyc
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RobotScripts\__pycache__\RightServo.cpython-37.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\__pycache__\RightServo.cpython-37.pyc
+      projectPath: RobotScripts\__pycache__\RightServo.cpython-37.pyc
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RobotScripts\__pycache__\Robot.cpython-37.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\__pycache__\Robot.cpython-37.pyc
+      projectPath: RobotScripts\__pycache__\Robot.cpython-37.pyc
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RobotScripts\launcher.sh
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\launcher.sh
+      projectPath: RobotScripts\launcher.sh
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 3301a8ecef09acb78cbaf0113e27c8699ec0ba0a
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: Wheel rod design fixes
+    description: 
+    timeString: 2020-01-30T16:16:55.000+00:00
+    commitTimeString: 2020-01-30T16:16:55.000+00:00
+    changes:
+    - path: RobotAutoCAD\Robot (Kit).FCStd
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot (Kit).FCStd
+      projectPath: RobotAutoCAD\Robot (Kit).FCStd
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot(edited).FCStd
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot(edited).FCStd
+      projectPath: RobotAutoCAD\Robot(edited).FCStd
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot.FCStd
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot.FCStd
+      projectPath: RobotAutoCAD\Robot.FCStd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot.FCStd1
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot.FCStd1
+      projectPath: RobotAutoCAD\Robot.FCStd1
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: e08b47210a9fa250d888730ec85bf2dd73da28ef
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: Addinationa details to the robot, plus a smaller prototype of it
+    description: 
+    timeString: 2020-01-29T20:49:31.000+00:00
+    commitTimeString: 2020-01-29T20:49:31.000+00:00
+    changes:
+    - path: Library\CurrentLayout-default.dwlt
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\CurrentLayout-default.dwlt
+      projectPath: Library\CurrentLayout-default.dwlt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\assetDatabase3
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\assetDatabase3
+      projectPath: Library\assetDatabase3
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\branches.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitlocks.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitlog.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitstatusentries.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\repoinfo.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot.FCStd
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot.FCStd
+      projectPath: RobotAutoCAD\Robot.FCStd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotAutoCAD\Robot.FCStd1
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotAutoCAD\Robot.FCStd1
+      projectPath: RobotAutoCAD\Robot.FCStd1
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: 94a8cde7e24b93a40d0dadb5db3655b89eb34fcd
     mergeA: 
     mergeB: 
