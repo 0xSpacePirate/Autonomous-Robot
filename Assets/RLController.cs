@@ -4,20 +4,17 @@ using UnityEngine;
 
 public class RLBalance : MonoBehaviour
 {
-
-    // Use this for initialization
-
-    private int NumberOfStates = 12, goal = 11, maxEpochs = 1000;
-    private double gamma = 0.5, learnRate = 0.5;
+    private int NumberOfStates = 12, Goal = 11, MaxEpochs = 1000;
+    private double Gamma = 0.5, LearnRate = 0.5;
     private int[][] FeasibleTransitions;
-    private double[][] RewardMatrix, Q;
+    private double[][] RewardMatrix, Quality;
 
     void Start()
     {
         Debug.Log("RL has been initiated!");
-        this.FeasibleTransitions = CreateMaze(NumberOfStates);
-        this.RewardMatrix = CreateReward(NumberOfStates);
-        this.Q = CreateQuality(NumberOfStates);
+        this.FeasibleTransitions = CreateMaze();
+        this.RewardMatrix = CreateReward();
+        this.Quality = CreateQuality();
         Train();
         Balance();
         Debug.Log("RL has ended!");
@@ -26,13 +23,14 @@ public class RLBalance : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // ...
 
     }
 
-    private int[][] CreateMaze(int NumberOfStates)
+    private int[][] CreateMaze()
     {
-        int[][] FeasibleTransitions = new int[ns][];
-        for (int i = 0; i < NumberOfStates; ++i) FT[i] = new int[ns];
+        int[][] FeasibleTransitions = new int[this.NumberOfStates][];
+        for (int i = 0; i < this.NumberOfStates; ++i) FeasibleTransitions[i] = new int[this.NumberOfStates];
         FT[0][1] = FT[0][4] = FT[1][0] = FT[1][5] = FT[2][3] = 1;
         FT[2][6] = FT[3][2] = FT[3][7] = FT[4][0] = FT[4][8] = 1;
         FT[5][1] = FT[5][6] = FT[5][9] = FT[6][2] = FT[6][5] = 1;
@@ -42,10 +40,10 @@ public class RLBalance : MonoBehaviour
         return FeasibleTransitions;
     }
 
-    private double[][] CreateReward(int NumberOfStates)
+    private double[][] CreateReward()
     {
-        double[][] RewardMatrix = new double[NumberOfStates][];
-        for (int i = 0; i < NumberOfStates; ++i) R[i] = new double[NumberOfStates];
+        double[][] RewardMatrix = new double[this.NumberOfStates][];
+        for (int i = 0; i < this.NumberOfStates; ++i) this.RewardMatrix[i] = new double[this.NumberOfStates];
         R[0][1] = R[0][4] = R[1][0] = R[1][5] = R[2][3] = -0.4;
         R[2][6] = R[3][2] = R[3][7] = R[4][0] = R[4][8] = -0.4;
         R[5][1] = R[5][6] = R[5][9] = R[6][2] = R[6][5] = -0.4;
@@ -59,47 +57,46 @@ public class RLBalance : MonoBehaviour
         return R;
     }
 
-    private double[][] CreateQuality(int NumberOfStates)
+    private double[][] CreateQuality()
     {
-        double[][] Q = new double[NumberOfStates][];
-        for (int i = 0; i < NumberOfStates; ++i)
-            Q[i] = new double[NumberOfStates];
-        return Q;
+        double[][] quality = new double[this.NumberOfStates][];
+        for (int i = 0; i < this.NumberOfStates; ++i)
+            quality[i] = new double[this.NumberOfStates];
+        return quality;
     }
 
-    private List<int> GetPossibleNextStates(int s, int[][] FeasibleTransitions)
+    private List<int> GetPossibleNextStates(int currentState)
     {
         List<int> result = new List<int>();
-        for (int j = 0; j < FeasibleTransitions.Length; ++j)
-            if (FeasibleTransitions[s][j] == 1) result.Add(j);
+        for (int j = 0; j < this.FeasibleTransitions.Length; ++j)
+            if (this.FeasibleTransitions[currentState][j] == 1) result.Add(j);
         return result;
     }
 
-    private int GetRandNextState(int s, int[][] FeasibleTransitions)
+    private int GetRandNextState(int state)
     {
-        List<int> possibleNextStates = GetPossibleNextStates(s, FeasibleTransitions);
-        int currentState = possibleNextStates.Count;
-        return possibleNextStates[rnd.Next(0, currentState)];
+        List<int> possibleNextStates = GetPossibleNextStates(state, this.FeasibleTransitions);
+        return possibleNextStates[rnd.Next(0, possibleNextStates.Count)];
     }
 
     private void Train()
     {
-        for (int epoch = 0; epoch < this.maxEpochs; ++epoch)
+        for (int epoch = 0; epoch < this.maxEpochs; ++epoch) // TODO CLEAN UP
         {
-            int currentState = rnd.Next(0, this.Rewards.Length);
+            int currentState = rnd.Next(0, this.RewardMatrix.Length);
             while (true)
             {
-                int nextState = GetRandNextState(currState, this.FeasibleTransitions);
+                int nextState = GetRandNextState(currentState, this.FeasibleTransitions);
                 List<int> PossibleNextNextStates = GetPossibleNextStates(nextState, this.FeasibleTransitions);
-                double maxQ = double.MinValue;
+                double maxQuality = double.MinValue;
                 for (int j = 0; j < PossibleNextNextStates.Count; ++j)
                 {
                     int nextNextState = PossibleNextNextStates[j];
-                    double q = Q[nextState][nextNextState];
-                    if (q > maxQ) maxQ = q;
+                    double currentQuality = this.Quality[nextState][nextNextState];
+                    if (currentQuality > maxQuality) maxQuality = currentQuality;
                 }
-                this.Q[currentState][nextState] = ((1 - this.learningRate) * this.Q[currentState][nextState])
-                                                    + (learningRate * (R[currentState][nextState] + (gamma * maxQ)));
+                this.Quality[currentState][nextState] = ((1 - this.learningRate) * this.Quality[currentState][nextState])
+                                                      + (this.learningRate * (this.RewardMatrix[currentState][nextState] + (gamma * maxQuality)));
                 currentState = nextState;
                 if (currentState == this.goal) break;
             }
@@ -111,7 +108,7 @@ public class RLBalance : MonoBehaviour
         int current = 0; int next; // current is 0?
         while (curr != goal)
         {
-            next = ArgMax(this.Q[current]);
+            next = ArgMax(this.Quality[current]);
             Debug.Log(next + "->");
             current = next;
         }
@@ -122,25 +119,20 @@ public class RLBalance : MonoBehaviour
         double maxVal = vector[0]; int idx = 0;
         for (int i = 0; i < vector.Length; ++i)
         {
-            if (vector[i] > maxVal)
-            {
-                maxVal = vector[i]; idx = i;
-            }
+            if (vector[i] > maxVal) maxVal = vector[i]; idx = i;
         }
         return idx;
     }
 
-    private void Print(double[][] Q)
+    private void Print()
     {
-        int ns = Q.Length;
-        Console.WriteLine("[0] [1] . . [11]");
-        for (int i = 0; i < ns; ++i)
+        for (int i = 0; i < this.Quality.Length; ++i)
         {
-            for (int j = 0; j < ns; ++j)
+            for (int j = 0; j < this.Quality.Length; ++j)
             {
-                Console.Write(Q[i][j].ToString("F2") + " ");
+                Debug.Log(this.Quality[i][j].ToString(" "));
             }
-            Console.WriteLine();
+            Debug.Log("\n");
         }
     }
 }
