@@ -11,7 +11,6 @@ public class Robot : MonoBehaviour
     public PIDController pid;
     public Vector3 originalPosition;
     public Quaternion originalRotation;
-    [SerializeField] float mainThrust = 100f;
     // rotation z;
     // Start is called before the first frame update
     void Start()

@@ -13,9 +13,177 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2020-03-07T18:21:28.945+00:00
-  initializedAtString: 2020-03-07T18:21:28.312+00:00
+  lastUpdatedAtString: 2020-03-08T15:11:36.830+00:00
+  initializedAtString: 2020-03-08T13:51:51.556+00:00
   log:
+  - commitID: eee89b8502555feec084d67a81442b46ba319697
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: initial RL update
+    description: 
+    timeString: 2020-03-07T20:14:54.000+00:00
+    commitTimeString: 2020-03-07T20:14:54.000+00:00
+    changes:
+    - path: Assets\RLController.cs
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\RLController.cs
+      projectPath: Assets\RLController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\scene.unity
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\scene.unity
+      projectPath: Assets\scene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\CurrentLayout-default.dwlt
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\CurrentLayout-default.dwlt
+      projectPath: Library\CurrentLayout-default.dwlt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\ScriptAssemblies\BuiltinAssemblies.stamp
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+      projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\StateCache\Hierarchy\a1d69d-mainStage.json
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\StateCache\Hierarchy\a1d69d-mainStage.json
+      projectPath: Library\StateCache\Hierarchy\a1d69d-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\assetDatabase3
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\assetDatabase3
+      projectPath: Library\assetDatabase3
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\branches.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\repoinfo.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\metadata\01\013a55f5093ebe14aa8ada994e671ab2
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\metadata\01\013a55f5093ebe14aa8ada994e671ab2
+      projectPath: Library\metadata\01\013a55f5093ebe14aa8ada994e671ab2
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 7ca4a4548d1778b6c337f2cd72d31afc7a27db70
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: RL initial setup
+    description: 
+    timeString: 2020-03-07T19:48:27.000+00:00
+    commitTimeString: 2020-03-07T19:48:27.000+00:00
+    changes:
+    - path: Assets\RLController.cs
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\RLController.cs
+      projectPath: Assets\RLController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Robot.cs
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\Robot.cs
+      projectPath: Assets\Robot.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\scene.unity
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\scene.unity
+      projectPath: Assets\scene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\CurrentLayout-default.dwlt
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\CurrentLayout-default.dwlt
+      projectPath: Library\CurrentLayout-default.dwlt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\ScriptAssemblies\Assembly-CSharp.dll
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\ScriptAssemblies\Assembly-CSharp.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\ScriptAssemblies\Assembly-CSharp.pdb
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\StateCache\Hierarchy\a1d69d-mainStage.json
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\StateCache\Hierarchy\a1d69d-mainStage.json
+      projectPath: Library\StateCache\Hierarchy\a1d69d-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\assetDatabase3
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\assetDatabase3
+      projectPath: Library\assetDatabase3
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\branches.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitlocks.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitlog.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitstatusentries.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\repoinfo.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\metadata\e5\e5c0601fd35d2cf4da6f36723851ad42
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\metadata\e5\e5c0601fd35d2cf4da6f36723851ad42
+      projectPath: Library\metadata\e5\e5c0601fd35d2cf4da6f36723851ad42
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: 34bd33084849187a7fda2b575d0ccedbe6ff8ae7
     mergeA: 
     mergeB: 

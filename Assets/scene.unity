@@ -403,12 +403,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c0601fd35d2cf4da6f36723851ad42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetAltitude: 0
+  targetAltitude: -1
   rigidBody: {fileID: 615343839}
   pid: {fileID: 615343837}
   originalPosition: {x: 0, y: 0, z: 0}
   originalRotation: {x: 0, y: 0, z: 0, w: 0}
-  mainThrust: 50
 --- !u!114 &615343837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,10 +420,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6de311dfcdb3b8b4aabe07a199429623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Kp: 60
+  Kp: 40
   Ki: 1
-  Kd: 50
-  value: 1
+  Kd: 10
+  value: 0
 --- !u!114 &615343838
 MonoBehaviour:
   m_ObjectHideFlags: 0
