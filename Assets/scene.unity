@@ -420,7 +420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6de311dfcdb3b8b4aabe07a199429623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Kp: 40
+  Kp: 60
   Ki: 1
   Kd: 10
   value: 0

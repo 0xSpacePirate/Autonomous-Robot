@@ -8,7 +8,7 @@ pwm = GPIO.PWM(12, 50)  # Sets up pin 11 as a PWM pin | 50hz frequency
 
 
 def start():
-    test = 7.6
+    test = 6.8
     pwm.start(test)  # Starts running PWM on the pin and sets it to 1
     # example = 0.0005 # 500us minimum
 
@@ -34,11 +34,17 @@ def start():
 
 
 def move(duty_cycle_number):
-    change = 7.1 + duty_cycle_number
-    if 7.08 < change < 7.13:
-        pwm.start(0)  # change too small - no need to move
+    change = 6.8 - duty_cycle_number
+    # if 6.75 <= change <= 6.85:
+    #     pwm.start(0)  # change too small - no need to move (Servo sometimes moves at steady 6.9)
+    if change > 7.4:
+        pwm.start(7.4)
+    elif change < 6.2:
+        pwm.start(6.2)
     else:
         pwm.start(change)  # Starts running PWM on the pin and sets it to 1
+
+    # pwm.start(11.5)
     # elif change > 12.5:
     #    pwm.start(12.5)
     # elif change < 0:

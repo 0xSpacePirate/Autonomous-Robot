@@ -79,6 +79,15 @@ public class RLBalance : MonoBehaviour
         return possibleNextStates[rnd.Next(0, possibleNextStates.Count)];
     }
 
+    // take current position
+    // take random action based on that position
+    // reevaluate
+    // check to see if the new position is lower
+    // than the previous one in terms of reward (-40 & 40 crash penalty) | if it's 0 then a reward
+    // 
+    // max_future_q => 
+    //
+
     private void Train()
     {
         var rnd = new System.Random();
@@ -96,7 +105,7 @@ public class RLBalance : MonoBehaviour
                     double currentQuality = this.Quality[nextState][nextNextState];
                     if (currentQuality > maxQuality) maxQuality = currentQuality;
                 }
-                this.Quality[currentState][nextState] = ((1 - this.LearningRate) * this.Quality[currentState][nextState])
+                this.Quality[currentState][nextState] = ((1 - this.LearningRate) * this.Quality[currentState][nextState]) //current_q
                                                       + (this.LearningRate * (this.RewardMatrix[currentState][nextState] + (Gamma * maxQuality)));
                 currentState = nextState;
                 if (currentState == this.Goal) break;

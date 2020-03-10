@@ -18,7 +18,7 @@ class Robot:
     # DutyCycle = 1/18 * (DesiredAngle) + 2 (or + 2.5 -> check)
 
     def __init__(self):
-        self.pid_balancer = PIDBalancer(24.5, 0.0, 12.0)
+        self.pid_balancer = PIDBalancer(37.0, 0.0,30.0)
         self.gyroFilter = self.pid_balancer.get_gyro_filter()
         (self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z,
          self.accel_scaled_x, self.accel_scaled_y, self.accel_scaled_z) = self.gyroFilter.get_gyro_and_accel()
@@ -101,8 +101,8 @@ class Robot:
         # self.gyroFilter.print_all()
         # pid_value = self.pid_balancer.get_pid_value()
         # self.pid_balancer.update_pid_error()
-        # # self.move_forward()
-        # self.stabilize(pid_value())
+        # self.move_forward()
+        # # self.stabilize(pid_value())
         # self.gyroFilter.print_all()
         # (x, y) = self.gyroFilter.calc_xy_values()
         # print("X and Y ->  " + str(x) + " : " + str(y))
@@ -112,7 +112,7 @@ class Robot:
         # DutyCycle = PulseWidth/(1/frequency) = PulseWidth * frequency
         # DutyCycle = PulseWidth*frequency = .001*50=.05= 5%
         print("pid_value is: " + str(pid_value))
-        pid = pid_value / 100  # Interpolate the number so it's compatible with the PWM signal
+        pid = pid_value / 20  # Interpolate the number so it's compatible with the PWM signal
         # self.rightMotor.move(pid)
         rightMotor.move(pid)
         # if pid_value > 0:

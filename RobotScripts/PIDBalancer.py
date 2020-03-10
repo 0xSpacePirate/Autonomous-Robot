@@ -27,7 +27,6 @@ class PIDBalancer:
         self.gyro_vertical_center_x = 5.7
         self.gyro_vertical_center_y = 7.052
 
-        self.previous_avg_accel_x = 1 # default => 1
         gyro_scale = 131.0
         accel_scale = 16384.0
         RAD_TO_DEG = 57.29578
@@ -82,13 +81,11 @@ class PIDBalancer:
     def update_pid_error(self):
         average_accel_scaled_x = self.output_filter()
         pid_error = self.accel_vertical_center_x + average_accel_scaled_x  # TODO USE accel_y && accel_z as well?
-        print("center: " + str(self.accel_vertical_center_x) + " current(AVG): " + str(
-            average_accel_scaled_x) + " = " + str(pid_error))
+        print("center: " + str(self.accel_vertical_center_x) + " current(AVG): " + str(average_accel_scaled_x) + " = " + str(pid_error))
         self.pid.update_pid(pid_error)
 
     def get_pid_value(self):
-        print("Current XYZ: " + str(self.accel_scaled_x) + " | " + str(self.accel_scaled_y) + " | " + str(
-            self.accel_scaled_z))
+        print("Current XYZ: " + str(self.accel_scaled_x) + " | " + str(self.accel_scaled_y) + " | " + str(self.accel_scaled_z))
         return self.pid.get_pid
 
     def get_gyro_filter(self):
@@ -101,8 +98,7 @@ class PIDBalancer:
             (self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z, self.accel_scaled_x, self.accel_scaled_y,
              self.accel_scaled_z) = self.gyroFilter.read_all()
             sum += self.accel_scaled_x
-        average_accel_scaled_x = ((sum / READ_TESTS) + self.previous_avg_accel_x) / 2 # get their avg
-        self.previous_avg_accel_x = average_accel_scaled_x
+        average_accel_scaled_x = sum / READ_TESTS
         return average_accel_scaled_x
 
     # print(
