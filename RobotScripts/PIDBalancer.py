@@ -27,6 +27,7 @@ class PIDBalancer:
         self.gyro_vertical_center_x = 5.7
         self.gyro_vertical_center_y = 7.052
 
+        self.median_filter = [0.0, 0.0, 0.0, 0.0, 0.0]
         gyro_scale = 131.0
         accel_scale = 16384.0
         RAD_TO_DEG = 57.29578
@@ -92,13 +93,11 @@ class PIDBalancer:
         return self.gyroFilter
 
     def output_filter(self):
-        sum = 0
-        READ_TESTS = 30
-        for i in range(READ_TESTS):
-            (self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z, self.accel_scaled_x, self.accel_scaled_y,
-             self.accel_scaled_z) = self.gyroFilter.read_all()
-            sum += self.accel_scaled_x
-        average_accel_scaled_x = sum / READ_TESTS
+        (self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z, self.accel_scaled_x, self.accel_scaled_y,
+        self.accel_scaled_z) = self.gyroFilter.read_all()
+        self.median_filter.insert(0, self.accel_scaled_x)
+        self.median_filter.pop()
+        average_accel_scaled_x = sum(self.median_filter) / len(self.median_filter)
         return average_accel_scaled_x
 
     # print(
