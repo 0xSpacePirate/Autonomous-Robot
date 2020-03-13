@@ -9,6 +9,8 @@ from GyroFilter import GyroFilter
 from PIDBalancer import PIDBalancer
 from PIDController import PIDController
 from threading import Timer
+
+
 # from simple_pid import PID
 
 
@@ -18,7 +20,7 @@ class Robot:
     # DutyCycle = 1/18 * (DesiredAngle) + 2 (or + 2.5 -> check)
 
     def __init__(self):
-        self.pid_balancer = PIDBalancer(37.0, 0.0,30.0)
+        self.pid_balancer = PIDBalancer(37.0, 0.0, 30.0)
         self.gyroFilter = self.pid_balancer.get_gyro_filter()
         (self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z,
          self.accel_scaled_x, self.accel_scaled_y, self.accel_scaled_z) = self.gyroFilter.get_gyro_and_accel()
@@ -93,7 +95,7 @@ class Robot:
                 self.stabilize(pid_value())
                 # self.move_forward()
                 self.gyroFilter.print_all()
-                time.sleep(0.1)
+                # time.sleep(0.1)
                 # self.stop_motors()
         except KeyboardInterrupt:
             print("Interrupted. End of stabilizing")
@@ -114,7 +116,8 @@ class Robot:
         print("pid_value is: " + str(pid_value))
         pid = pid_value / 20  # Interpolate the number so it's compatible with the PWM signal
         # self.rightMotor.move(pid)
-        rightMotor.move(pid)
+        exponential_value = pow(2, pid) / 10  # test
+        rightMotor.move(pid)  # exponential_value
         # if pid_value > 0:
         #     self.move_forward()
         # else:
