@@ -97,7 +97,10 @@ class PIDBalancer:
         self.accel_scaled_z) = self.gyroFilter.read_all()
         self.median_filter.insert(0, self.accel_scaled_x)
         self.median_filter.pop()
-        average_accel_scaled_x = sum(self.median_filter) / len(self.median_filter)
+        average_accel_scaled_x = float(sum(self.median_filter) / len(self.median_filter))
+        print("ACCEL AVG " + str(self.median_filter[0]) + " | " + str(self.median_filter[1]) + " | "
+              + str(self.median_filter[2]) + " | " + str(self.median_filter[3]) + " | "
+              + str(self.median_filter[4]) + " = " + str(average_accel_scaled_x))
         return average_accel_scaled_x
 
     # print(

@@ -11,6 +11,8 @@ public class Robot : MonoBehaviour
     public PIDController pid;
     public Vector3 originalPosition;
     public Quaternion originalRotation;
+    public WheelCollider wheelColliderLeft, wheelColliderRight;
+
     // rotation z;
     // Start is called before the first frame update
     void Start()
@@ -46,12 +48,18 @@ public class Robot : MonoBehaviour
         if (transform.rotation.eulerAngles.z < 0 && transform.rotation.eulerAngles.z >= -50)
         {
             GetComponent<Rigidbody>().AddTorque(transform.forward * pid.Update(error) * transform.rotation.eulerAngles.z);
+            wheelColliderLeft.motorTorque =  pid.Update(error);
+            wheelColliderRight.motorTorque =  pid.Update(error);
+
         }
 
         //falling backwards
         if (transform.rotation.eulerAngles.z > 0 && transform.rotation.eulerAngles.z <= 50)
         {
+            // Input.GetAxis("Horizontal") 
             GetComponent<Rigidbody>().AddTorque(-transform.forward * pid.Update(error) * transform.rotation.eulerAngles.z);
+            wheelColliderLeft.motorTorque =  pid.Update(error);
+            wheelColliderRight.motorTorque = pid.Update(error);
         }
         //rigidBody.AddForce(Vector3.forward * Time.deltaTime * 10);
     }
@@ -71,7 +79,7 @@ public class Robot : MonoBehaviour
             transform.Translate(Vector3.forward * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.D))
-        {
+        {           
             transform.Translate(-Vector3.forward * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.R))

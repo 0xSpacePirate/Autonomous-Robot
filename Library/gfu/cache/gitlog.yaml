@@ -13,9 +13,178 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2020-03-10T14:21:32.831+00:00
-  initializedAtString: 2020-03-10T14:21:32.546+00:00
+  lastUpdatedAtString: 2020-03-14T16:02:29.545+00:00
+  initializedAtString: 2020-03-14T16:02:29.252+00:00
   log:
+  - commitID: 8e33ceea1969336c8887cd23f4c2757668466f48
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: added exponential function (needs testing, removed the thread sleep since
+      the robot balances better without it
+    description: 
+    timeString: 2020-03-13T21:48:12.000+00:00
+    commitTimeString: 2020-03-13T21:48:12.000+00:00
+    changes:
+    - path: RobotScripts\Robot.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.py
+      projectPath: RobotScripts\Robot.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 027369a5d08cbfe2ee26f2b509cd2c800503c5f9
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: fixed the output filter
+    description: 
+    timeString: 2020-03-13T21:40:48.000+00:00
+    commitTimeString: 2020-03-13T21:40:48.000+00:00
+    changes:
+    - path: RobotScripts\PIDBalancer.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDBalancer.py
+      projectPath: RobotScripts\PIDBalancer.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\RightServo.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\RightServo.py
+      projectPath: RobotScripts\RightServo.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: a72ad6ff2493352a98beacb86ccc895810c3a5a8
+    mergeA: 
+    mergeB: 
+    authorName: POBnH4
+    authorEmail: bonchp4@yahoo.com
+    commitEmail: bonchp4@yahoo.com
+    commitName: POBnH4
+    summary: Robot Hardware PID tune updates | RL additional comments
+    description: 
+    timeString: 2020-03-10T21:38:20.000+00:00
+    commitTimeString: 2020-03-10T21:38:20.000+00:00
+    changes:
+    - path: Assets\RLController.cs
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\RLController.cs
+      projectPath: Assets\RLController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\scene.unity
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Assets\scene.unity
+      projectPath: Assets\scene.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\CurrentLayout-default.dwlt
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\CurrentLayout-default.dwlt
+      projectPath: Library\CurrentLayout-default.dwlt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\ScriptAssemblies\BuiltinAssemblies.stamp
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+      projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\assetDatabase3
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\assetDatabase3
+      projectPath: Library\assetDatabase3
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\branches.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitlocks.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitlog.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitstatusentries.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\repoinfo.yaml
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\metadata\01\013a55f5093ebe14aa8ada994e671ab2
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\Library\metadata\01\013a55f5093ebe14aa8ada994e671ab2
+      projectPath: Library\metadata\01\013a55f5093ebe14aa8ada994e671ab2
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\GyroFilter.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\GyroFilter.py
+      projectPath: RobotScripts\GyroFilter.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\GyroFilter.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\GyroFilter.pyc
+      projectPath: RobotScripts\GyroFilter.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\PIDBalancer.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\PIDBalancer.py
+      projectPath: RobotScripts\PIDBalancer.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\RightServo.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\RightServo.py
+      projectPath: RobotScripts\RightServo.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\RightServo.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\RightServo.pyc
+      projectPath: RobotScripts\RightServo.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.py
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.py
+      projectPath: RobotScripts\Robot.py
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RobotScripts\Robot.pyc
+      fullPath: D:\Work\Projects\Unity\Self-balancing Robot\RobotScripts\Robot.pyc
+      projectPath: RobotScripts\Robot.pyc
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: 6f3455585e1ac40977876c26e0f57d1d03b7e926
     mergeA: 
     mergeB: 
