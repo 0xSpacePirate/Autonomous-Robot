@@ -34,7 +34,7 @@ def start():
 
 
 def move(duty_cycle_number):
-    change = 6.8 - duty_cycle_number
+    change = 6.8 + duty_cycle_number
     # if 6.75 <= change <= 6.85:
     #     pwm.start(0)  # change too small - no need to move (Servo sometimes moves at steady 6.9)
     if change > 7.3:

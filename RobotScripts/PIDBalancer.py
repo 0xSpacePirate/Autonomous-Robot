@@ -27,7 +27,7 @@ class PIDBalancer:
         self.gyro_vertical_center_x = 5.7
         self.gyro_vertical_center_y = 7.052
 
-        self.median_filter = [0.0, 0.0, 0.0, 0.0, 0.0]
+        self.median_filter = [6.8, 6.8, 6.8, 6.8, 6.8]
         gyro_scale = 131.0
         accel_scale = 16384.0
         RAD_TO_DEG = 57.29578
@@ -81,7 +81,9 @@ class PIDBalancer:
 
     def update_pid_error(self):
         average_accel_scaled_x = self.output_filter()
-        pid_error = self.accel_vertical_center_x + average_accel_scaled_x  # TODO USE accel_y && accel_z as well?
+        pid_error = self.accel_vertical_center_x - average_accel_scaled_x  # TODO USE accel_y && accel_z as well?
+        X, Y = self.gyroFilter.calc_xy_values()
+        print("X using X Y Z: " + str(X))
         print("center: " + str(self.accel_vertical_center_x) + " current(AVG): " + str(average_accel_scaled_x) + " = " + str(pid_error))
         self.pid.update_pid(pid_error)
 

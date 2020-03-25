@@ -26,7 +26,6 @@ class Robot:
          self.accel_scaled_x, self.accel_scaled_y, self.accel_scaled_z) = self.gyroFilter.get_gyro_and_accel()
         # self.rightMotor = RightServo()
         self.leftMotor = LeftServo()
-        self.median_pid_filter = [6.8, 6.8, 6.8, 6.8, 6.8]
 
     def start_motors(self):
         # leftMotor.start()
