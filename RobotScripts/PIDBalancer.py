@@ -4,6 +4,7 @@ import time
 # import simple_pid
 from GyroFilter import GyroFilter
 from PIDController import PIDController
+from MyDataReader import MyDataReader
 
 
 # For more information refer to tests/balance_numbers_tests.txt
@@ -27,7 +28,7 @@ class PIDBalancer:
         self.gyro_vertical_center_x = 5.7
         self.gyro_vertical_center_y = 7.052
 
-        self.median_filter = [6.8, 6.8, 6.8, 6.8, 6.8]
+        self.median_filter = [0.0, 0.0, 0.0, 0.0, 0.0]
         gyro_scale = 131.0
         accel_scale = 16384.0
         RAD_TO_DEG = 57.29578
@@ -54,6 +55,9 @@ class PIDBalancer:
         pid_set_point = 0.00
         self.pid = PIDController(kp, ki, kd, pid_set_point)
 
+        self.DataReaderMain = MyDataReader()
+        self.data_reader = self.DataReaderMain.get_xyx()
+
         # The angle of the Gyroscope
         gyroAngleX += self.gyro_scaled_x * time_diff
         gyroAngleY += self.gyro_scaled_y * time_diff
@@ -71,6 +75,10 @@ class PIDBalancer:
     def dist(self, a, b):
         return math.sqrt((a * a) + (b * b))
 
+    def get_current_data(self):
+        self.data_reader = self.DataReaderMain.get_xyx()  # reassign, might use it for sth else
+        return self.data_reader
+
     def get_y_rotation(self, x, y, z):
         radians = math.atan2(x, self.dist(y, z))
         return -math.degrees(radians)
@@ -81,23 +89,34 @@ class PIDBalancer:
 
     def update_pid_error(self):
         average_accel_scaled_x = self.output_filter()
-        pid_error = self.accel_vertical_center_x - average_accel_scaled_x  # TODO USE accel_y && accel_z as well?
-        X, Y = self.gyroFilter.calc_xy_values()
-        print("X using X Y Z: " + str(X))
-        print("center: " + str(self.accel_vertical_center_x) + " current(AVG): " + str(average_accel_scaled_x) + " = " + str(pid_error))
+        # pid_error = self.accel_vertical_center_x - average_accel_scaled_x
+        pid_error = average_accel_scaled_x
+        # X, Y = self.gyroFilter.calc_xy_values()
+        # print("X using X Y Z: " + str(X))
+        # print("center: " + str(self.accel_vertical_center_x) + " current(AVG): " + str(
+        #         #     average_accel_scaled_x) + " = " + str(pid_error))
+        # print("center: " + str(self.accel_vertical_center_x) + " current(AVG): " + str(
+        #      average_accel_scaled_x) + " = " + str(pid_error))
         self.pid.update_pid(pid_error)
 
     def get_pid_value(self):
-        print("Current XYZ: " + str(self.accel_scaled_x) + " | " + str(self.accel_scaled_y) + " | " + str(self.accel_scaled_z))
+        # print("Current XYZ: " + str(self.accel_scaled_x) + " | " + str(self.accel_scaled_y) + " | " + str(
+        #    self.accel_scaled_z))
         return self.pid.get_pid
 
     def get_gyro_filter(self):
         return self.gyroFilter
 
     def output_filter(self):
-        (self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z, self.accel_scaled_x, self.accel_scaled_y,
-        self.accel_scaled_z) = self.gyroFilter.read_all()
-        self.median_filter.insert(0, self.accel_scaled_x)
+        # (self.gyro_scaled_x, self.gyro_scaled_y, self.gyro_scaled_z, self.accel_scaled_x, self.accel_scaled_y,
+        #  self.accel_scaled_z) = self.gyroFilter.read_all()
+        self.data_reader = self.DataReaderMain.get_xyx()
+        x_value = self.data_reader[0]
+
+        if self.data_reader[2] <= 0:  # if accel x is >= 0, the robot falls forward
+            x_value = -x_value
+
+        self.median_filter.insert(0, x_value)  # self.data_reader[0] stands for value of X;
         self.median_filter.pop()
         average_accel_scaled_x = float(sum(self.median_filter) / len(self.median_filter))
         print("ACCEL AVG " + str(self.median_filter[0]) + " | " + str(self.median_filter[1]) + " | "

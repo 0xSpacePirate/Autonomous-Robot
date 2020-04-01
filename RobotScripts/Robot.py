@@ -87,14 +87,13 @@ class Robot:
         try:
             while True:
                 print("\n= = = = = = = = = = = = = = = = = =\n")
-                self.gyroFilter.print_all()
+                # self.gyroFilter.print_all()
                 self.pid_balancer.update_pid_error()
                 pid_value = self.pid_balancer.get_pid_value()
                 print("PID value = " + str(pid_value()))
-                # threading.Timer(0.5, self.stabilize(pid_value)).start() # TODO not thread safe
                 self.stabilize(pid_value())
                 # self.move_forward()
-                self.gyroFilter.print_all()
+                # self.gyroFilter.print_all()
                 time.sleep(0.1)
                 # self.stop_motors()
         except KeyboardInterrupt:
@@ -113,8 +112,7 @@ class Robot:
         # DutyCycle = PulseWidth/Period, therefore
         # DutyCycle = PulseWidth/(1/frequency) = PulseWidth * frequency
         # DutyCycle = PulseWidth*frequency = .001*50=.05= 5%
-        print("pid_value is: " + str(pid_value))
-        pid = pid_value / 20  # Interpolate the number so it's compatible with the PWM signal
+        # pid = pid_value / 20  # Interpolate the number so it's compatible with the PWM signal
         # self.rightMotor.move(pid)
         # self.median_pid_filter.insert(0, pid)
         # self.median_pid_filter.pop()
@@ -122,8 +120,9 @@ class Robot:
         # print("PID AVG " + str(self.median_pid_filter[0]) + " | " + str(self.median_pid_filter[1]) + " | "
         #       + str(self.median_pid_filter[2]) + " | " + str(self.median_pid_filter[3]) + " | "
         #       + str(self.median_pid_filter[4]) + " = " + str(average_pid))
-        exponential_value = pow(2, pid)  # / 10  # test
-        rightMotor.move(pid)  # exponential_value
+        # exponential_value = pow(2, pid)  # / 10  # test
+        # rightMotor.move(pid)
+        rightMotor.move(pid_value)
         # if pid_value > 0:
         #     self.move_forward()
         # else:

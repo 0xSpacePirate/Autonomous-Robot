@@ -6,8 +6,8 @@ class LeftServo:
 
     def __init__(self):
         GPIO.setmode(GPIO.BOARD)  # Sets the pin numbering system to use the physical layout
-        GPIO.setup(11, GPIO.OUT)  # Sets up pin 12 (for PWM) to an output (instead of an input)
-        self.pwm = GPIO.PWM(11, 50)  # Sets up pin 11 as a PWM pin | 50hz frequency
+        # GPIO.setup(11, GPIO.OUT)  # Sets up pin 12 (for PWM) to an output (instead of an input)
+        # self.pwm = GPIO.PWM(11, 50)  # Sets up pin 11 as a PWM pin | 50hz frequency
         self.default_steady_signal = 7.1
 
     def start(self):
