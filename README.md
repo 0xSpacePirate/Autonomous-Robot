@@ -9,7 +9,7 @@ One of the goals of the project was to make a brand new robot design and not cop
 from the already created ones on the internet. The design was supposed to represent
 the Robert Gordon University robot (see image below):
 
-<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/7.PNG" width="20%" height="20%">
+<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/7.PNG" width="40%">
 # Please refer to the pdf document for more detailed information!
 
 More info on the motivation & literature review can be found in the PDF document - chapters: 1-2;
@@ -29,8 +29,6 @@ The hardware that was used to control the robot:
 The first prototype can be seen below:
 
 <img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/6.PNG" width="30%" height="20%">
-<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/5.PNG" width="30%" height="20%">
-<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/4.PNG" width="30%" height="20%">
 
 More info on the setup can be found in the PDF document - chapter: 3;
 
@@ -39,8 +37,7 @@ More info on the setup can be found in the PDF document - chapter: 3;
 The design of the second prototype is more sophisticated and showed better results:
 
 <img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/1.PNG" width="30%" height="20%">
-<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/2.PNG" width="30%" height="20%">
-<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/3.PNG" width="30%" height="20%">
+
 
 The legs had to be extended due to the reason that the robot was falling to quickly.
 <img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/robot.jpg" width="30%" height="20%">
@@ -55,7 +52,7 @@ Examples can be seen below which represent the results from the first prototype:
 The results from the two prototypes show that with the many improvements implemented, 
 the robot manages to self balance itself better and better but not fully.
 
-<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/8.PNG" width="40%">
+<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/8.PNG" width="50%">
 
 More detailed info on the results can be found in the PDF document - chapter 8;
 
