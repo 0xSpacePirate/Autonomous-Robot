@@ -12,7 +12,7 @@ the Robert Gordon University robot (see image below):
 <img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/7.PNG" width="40%">
 
 ## Please refer to the pdf document for more detailed information! 
-# The pdf document can be found at: [Honours Project Report](https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/Honours%20Report%20-%20PETAR%20BONCHEV%20(1607262).pdf)
+The pdf document can be found at: [Honours Project Report](https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/Honours%20Report%20-%20PETAR%20BONCHEV%20(1607262).pdf)
 
 More info on the motivation & literature review can be found in the PDF document - chapters: 1-2;
 
