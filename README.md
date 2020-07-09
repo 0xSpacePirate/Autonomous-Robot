@@ -9,8 +9,7 @@ One of the goals of the project was to make a brand new robot design and not cop
 from the already created ones on the internet. The design was supposed to represent
 the Robert Gordon University robot (see image below):
 
-![alt text](https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/7.PNG) 
-
+<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/7.PNG" width="10%">
 # Please refer to the pdf document for more detailed information!
 
 More info on the motivation & literature review can be found in the PDF document - chapters: 1-2;
@@ -28,9 +27,9 @@ The hardware that was used to control the robot:
 7. UBEC 5V switch regulator
 
 The first prototype can be seen below:
-![alt text](https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/6.PNG){:height="36px" width="36px"}.
-![alt text](https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/5.PNG){:height="36px" width="36px"}.
-![alt text](https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/4.PNG){:height="36px" width="36px"}.
+![alt text](https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/6.PNG)
+![alt text](https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/5.PNG)
+![alt text](https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/4.PNG)
 
 
 More info on the setup can be found in the PDF document - chapter: 3;
@@ -38,9 +37,9 @@ More info on the setup can be found in the PDF document - chapter: 3;
 -----------------------------------------------------------------------------------
 
 The design of the second prototype is more sophisticated and showed better results:
-![alt text](https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/1.PNG){:height="36px" width="36px"}. 
-![alt text](https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/2.PNG){:height="36px" width="36px"}. 
-![alt text](https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/3.PNG){:height="36px" width="36px"}. 
+![alt text](https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/1.PNG)
+![alt text](https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/2.PNG) 
+![alt text](https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/3.PNG) 
 
 The legs had to be extended due to the reason that the robot was falling to quickly.
 
@@ -57,7 +56,7 @@ Examples can be seen below which represent the results from the first prototype:
 The results from the two prototypes show that with the many improvements implemented, 
 the robot manages to self balance itself better and better but not fully.
 
-![alt text](https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/8.PNG){:height="36px" width="36px"}. 
+![alt text](https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/8.PNG)
 
 More detailed info on the results can be found in the PDF document - chapter 8;
 
