@@ -45,14 +45,8 @@ Examples can be seen below which represent the results from the first prototype:
 
 <img src="https://imgur.com/a/DbxxrUt" width="30%" height="20%">
 <img src="https://imgur.com/a/jG6TrAk" width="30%" height="20%">
-
-<video width="320" height="240" controls>
-  <source src="https://youtu.be/z1m1uqZzNYo" type="video/mp4">
-</video>
-
-<video width="320" height="240" controls>
-  <source src="https://youtu.be/aM4gjytkHWw" type="video/mp4">
-</video>
+[![Prototype 1 video 1](https://img.youtube.com/vi/aM4gjytkHWw/0.jpg)](https://youtu.be/z1m1uqZzNYo)
+[![Prototype 1 video 2](https://img.youtube.com/vi/z1m1uqZzNYo/0.jpg)](https://youtu.be/aM4gjytkHWw)
 
 Final version of prototype 2:
 
