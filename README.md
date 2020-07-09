@@ -47,11 +47,11 @@ Examples can be seen below which represent the results from the first prototype:
 <img src="https://imgur.com/a/jG6TrAk" width="30%" height="20%">
 
 <video width="320" height="240" controls>
-  <source src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/videoOne.mp4" type="video/mp4">
+  <source src="https://youtu.be/z1m1uqZzNYo" type="video/mp4">
 </video>
 
 <video width="320" height="240" controls>
-  <source src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/videoTwo.mp4" type="video/mp4">
+  <source src="https://youtu.be/aM4gjytkHWw" type="video/mp4">
 </video>
 
 Final version of prototype 2:
