@@ -36,8 +36,8 @@ https://imgur.com/a/UD2zt99
 The project was not finished. Partially working self balacing robot using only a PID controller.
 Examples can be seen below which represent the results from the first prototype:
 
-[![Watch the video] (https://imgur.com/a/DbxxrUt)
-[![Watch the video] (https://imgur.com/a/jG6TrAk)
+[![Watch the video (https://imgur.com/a/DbxxrUt)]
+[![Watch the video (https://imgur.com/a/jG6TrAk)]
 
 The results from the two prototypes show that with the many improvements implemented, 
 the robot manages to self balance itself better and better but not fully.
