@@ -47,16 +47,15 @@ The legs had to be extended due to the reason that the robot was falling to quic
 
 The project was not finished. Partially working self balacing robot using only a PID controller.
 Examples can be seen below which represent the results from the first prototype:
-
-![Alt Text](https://imgur.com/a/DbxxrUt)
-![Alt Text](https://imgur.com/a/jG6TrAk)
+<img src="https://imgur.com/a/DbxxrUt" width="30%" height="20%">
+<img src="https://imgur.com/a/jG6TrAk" width="30%" height="20%">
 
 -----------------------------------------------------------------------------------
 
 The results from the two prototypes show that with the many improvements implemented, 
 the robot manages to self balance itself better and better but not fully.
 
-<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/8.PNG" width="30%" height="20%">
+<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/8.PNG" width="40%">
 
 More detailed info on the results can be found in the PDF document - chapter 8;
 
