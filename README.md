@@ -10,6 +10,7 @@ from the already created ones on the internet. The design was supposed to repres
 the Robert Gordon University robot (see image below):
 
 <img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/7.PNG" width="40%">
+
 # Please refer to the pdf document for more detailed information!
 
 More info on the motivation & literature review can be found in the PDF document - chapters: 1-2;
@@ -34,18 +35,19 @@ More info on the setup can be found in the PDF document - chapter: 3;
 
 -----------------------------------------------------------------------------------
 
-The design of the second prototype is more sophisticated and showed better results:
+The design of the second prototype is more sophisticated and showed better results, 
+however the legs had to be extended due to the reason that the robot was falling to quickly.
 
 <img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/1.PNG" width="30%" height="20%">
-
-
-The legs had to be extended due to the reason that the robot was falling to quickly.
-<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/robot.jpg" width="30%" height="20%">
 
 The project was not finished. Partially working self balacing robot using only a PID controller.
 Examples can be seen below which represent the results from the first prototype:
 <img src="https://imgur.com/a/DbxxrUt" width="30%" height="20%">
 <img src="https://imgur.com/a/jG6TrAk" width="30%" height="20%">
+
+
+Final version of prototype 2:
+<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/robot.jpg" width="30%" height="20%">
 
 -----------------------------------------------------------------------------------
 
