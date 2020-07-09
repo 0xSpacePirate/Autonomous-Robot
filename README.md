@@ -28,9 +28,9 @@ The hardware that was used to control the robot:
 
 The first prototype can be seen below:
 
-<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/6.PNG" width="20%" height="20%">
-<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/5.PNG" width="20%" height="20%">
-<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/4.PNG" width="20%" height="20%">
+<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/6.PNG" width="30%" height="20%">
+<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/5.PNG" width="30%" height="20%">
+<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/4.PNG" width="30%" height="20%">
 
 More info on the setup can be found in the PDF document - chapter: 3;
 
@@ -38,25 +38,25 @@ More info on the setup can be found in the PDF document - chapter: 3;
 
 The design of the second prototype is more sophisticated and showed better results:
 
-<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/1.PNG" width="20%" height="20%">
-<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/2.PNG" width="20%" height="20%">
-<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/3.PNG" width="20%" height="20%">
+<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/1.PNG" width="30%" height="20%">
+<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/2.PNG" width="30%" height="20%">
+<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/3.PNG" width="30%" height="20%">
 
 The legs had to be extended due to the reason that the robot was falling to quickly.
-<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/robot.jpg" width="20%" height="20%">
+<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/robot.jpg" width="30%" height="20%">
 
 The project was not finished. Partially working self balacing robot using only a PID controller.
 Examples can be seen below which represent the results from the first prototype:
 
-![til](https://imgur.com/a/DbxxrUt)
-![til](https://imgur.com/a/jG6TrAk)
+![Alt Text](https://imgur.com/a/DbxxrUt)
+![Alt Text](https://imgur.com/a/jG6TrAk)
 
 -----------------------------------------------------------------------------------
 
 The results from the two prototypes show that with the many improvements implemented, 
 the robot manages to self balance itself better and better but not fully.
 
-![alt text](https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/8.PNG)
+<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/8.PNG" width="30%" height="20%">
 
 More detailed info on the results can be found in the PDF document - chapter 8;
 
