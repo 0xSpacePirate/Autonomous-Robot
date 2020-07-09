@@ -31,13 +31,13 @@ The design of the second prototype is more sophisticated and showed better resul
 
 The legs had to be extended due to the reason that the robot was falling to quickly.
 
-[prototype 2 image final]
-
+https://imgur.com/a/UD2zt99
 
 The project was not finished. Partially working self balacing robot using only a PID controller.
 Examples can be seen below which represent the results from the first prototype:
 
-[video] [video] [video]
+[![Watch the video] (https://imgur.com/a/DbxxrUt)
+[![Watch the video] (https://imgur.com/a/jG6TrAk)
 
 The results from the two prototypes show that with the many improvements implemented, 
 the robot manages to self balance itself better and better but not fully.
