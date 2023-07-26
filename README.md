@@ -48,15 +48,6 @@ Examples can be seen below which represent the results from the first prototype:
 
 ## [Prototype 1 video two](https://youtu.be/aM4gjytkHWw)
 
-Final version of prototype 2:
-
-<img src="https://github.com/SpacePirato/Autonomous-Robot/blob/master/Library/robot.jpg" width="30%" height="20%">
-
-
-
-
-
-
 -----------------------------------------------------------------------------------
 
 The results from the two prototypes show that with the many improvements implemented, 
